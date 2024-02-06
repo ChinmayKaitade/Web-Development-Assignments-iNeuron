@@ -1,0 +1,29 @@
+*** PW Full Stack Web Development Assignment & Project Planning ***
+
+Week-01 : 01. Working Plan
+Week-02 : 01. Core HTML Assignment
+Week-03 : 02. Media & Modern HTML Assignment
+Week-04 : 03. CSS Assignment
+Week-05 : 04. Position in CSS
+Week-06 : 05. Flexbox in CSS
+Week-07 : 06. Grid in CSS
+Week-08 : 07. Responsive Design / 08. Advanced CSS
+Week-09 : 09. Git & Github
+Week-10 : 10. Tailwind CSS Basics
+Week-11 : 11. Tailwind CSS Advanced
+Week-12 : 12. MileStone Exam
+Week-13 : 13. JavaScript Fundamentals- 1
+Week-14 : 14. JavaScript Fundamentals - 2
+Week-15 : 15.  JavaScript Fundamentals - 3 / 16. JavaScript DOM
+Week-16 : 17. HOF and Functional Programming
+Week-17 : 18. Execution of JavaScript
+Week-18 : 19. Callback and Promises
+Week-19 : 
+Week-20 : 
+Week-21 : 
+Week-22 : 
+Week-23 : 
+Week-24 : 
+Week-25 : 
+Week-26 : 
+Week-27 : 
