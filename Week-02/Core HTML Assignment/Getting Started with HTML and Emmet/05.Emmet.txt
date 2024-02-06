@@ -1,0 +1,9 @@
+5. What is emmet? List some of the advantages emmet offers?
+ans:
+Emmet is a free plugin for text editors that allows us to write HTML, CSS, and other code formats faster by assisting through abbreviations that expand into full code.
+Advantages of Emmets are as follows -
+    1. Saves a lot of time.
+    2. Increase productivity.
+    3. Efficient Programming.
+    4. Makes coding more fun.
+    5. Reduced Errors.  

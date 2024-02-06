@@ -1,0 +1,15 @@
+7. Explain in brief about the nesting operators in emmet.
+ans:
+Nesting operators help to place elements with respect to other elements.
+
+1. Child (>)
+Using ">" operator, we can nest elements.
+
+2. Sibling (+)
+Using the "+" operator to position elements close to each other, at the same level.
+
+3. Climb Up (^)
+When using the ">" operator, you can traverse down the generated tree, and the positions of sibling elements will be determined in relation to the deepest element.
+
+4. Multiplication (*)
+Using  "*" operator you can define how many times an element should be outputted.

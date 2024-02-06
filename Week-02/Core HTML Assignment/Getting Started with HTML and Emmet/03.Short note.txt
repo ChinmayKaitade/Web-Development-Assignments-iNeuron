@@ -1,0 +1,21 @@
+3. Write a short note on tags, elements, and attributes along with relevant examples.
+ans:
+Tags:- Tags are the keywords on a web page that define how your web browsers must format and display your web page. 
+There are four required tags in HTML.These are html, title, head, and body.
+Examples. Bold(<b>), Italic(i), Subscript(<sub>), Superscript(<sup>), etc.
+Bold:- <b>This is the Heading of webpage</b>
+Italic:- <i>These is an example of Italic tag.</i>
+
+Elements:- An HTML Element is defined by a start tag, some content and an end tag. 
+HTML elements are the building blocks of web pages.
+Example. <h1>This is the Heading of webpage</h1>
+In this example, opening tag is <h1> & closing tag is </h1>.
+Note:- closing tag always contains (/) in tag.
+
+Attributes:- In HTML, attributes provide additional information about an element. 
+They are usually included in the opening tag of the element.
+Example: <a href="https://google.com" >Go To Google</a>. 
+In this example, the a element is used to create a hyperlink. The href attribute specifies the URL that the hyperlink points to. 
+The attribute values are enclosed in quotes.
+
+
