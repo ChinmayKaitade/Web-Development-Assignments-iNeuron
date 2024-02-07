@@ -1,0 +1,49 @@
+/* Background colour of webpage */
+body {
+  background-color: #deb887;
+  text-align: justify;
+}
+
+/* Header Image Size Adjust */
+header img {
+  height: 90px;
+  width: 90px;
+}
+
+/* Header Text Size */
+header h1 {
+  font-size: 40px;
+}
+
+/* Font styling for headline */
+header .head-lines {
+  font-size: 23px;
+  font-weight: 900;
+  font-family: cursive;
+}
+
+/* Text Colour for Headings h1,h3 & h4 */
+h2,
+h3,
+h4 {
+  color: #f50707;
+}
+
+/* Text formatting for Section Headings */
+section h2,
+h3,
+h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Text Formatting for Section Paragraph */
+section p {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Footer Text Formatting */
+footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

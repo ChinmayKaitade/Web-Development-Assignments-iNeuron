@@ -1,0 +1,28 @@
+<!-- 05. Create a web page with an image that is hidden until it is hovered over. Use
+a heading above the image that says hover below to reveal a surprise. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover | Surprise Image</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      img {
+        opacity: 0;
+        width: 40%;
+      }
+
+      img:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hover Below To Reveal a Surprise !!!</h1>
+    <img src="cctv.gif" alt="cctv" />
+  </body>
+</html>

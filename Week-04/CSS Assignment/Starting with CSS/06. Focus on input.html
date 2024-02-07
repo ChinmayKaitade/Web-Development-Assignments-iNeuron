@@ -1,0 +1,41 @@
+<!-- 06. Create a web page with a form where the input field has a yellow background color when it is focused on. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focused on Form input</title>
+    <style>
+      input:focus {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Form</h1>
+    <form>
+      <fieldset>
+        <label for="username"> Username : </label>
+        <input type="text" id="username" name="username" required />
+
+        <br />
+        <br />
+
+        <label for="email" class="email"> Email : </label>
+        <input type="text" id="email" name="email" required />
+
+        <br />
+        <br />
+
+        <label for="password" class="password"> Password : </label>
+        <input type="password" id="password" name="password" required />
+
+        <br />
+        <br />
+
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

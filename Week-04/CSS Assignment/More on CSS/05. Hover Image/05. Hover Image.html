@@ -1,0 +1,28 @@
+<!-- 05. Create a simple webpage with an image. Add a hover effect to the image
+where the border color changes and the image must be circular on hover. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Image</title>
+    <style>
+      /* Image Styling Before Hover */
+      img {
+        border: 8px solid #ec9c07;
+      }
+
+      /* Image Styling After Hover */
+      img:hover {
+        border-radius: 50%;
+        width: 510px;
+        height: 545px;
+        border: 8px solid #e529e5;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="Course Img.png" alt="Course Image" />
+  </body>
+</html>

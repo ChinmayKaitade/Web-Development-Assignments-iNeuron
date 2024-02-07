@@ -1,0 +1,47 @@
+<!-- 10. Create a simple webpage with a card similar to question number 2. The card
+must be semi-transparent as default and on hovering the card must be displayed
+clearly. Use CSS opacity to achieve this output. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover - Full Stack Web Development 2.0</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      img {
+        height: 200px;
+        width: 300px;
+        border-radius: 5px;
+      }
+
+      span {
+        font-weight: 530;
+      }
+
+      /* Card Before Hover */
+      div {
+        margin: 0 auto;
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #00ffd07f;
+      }
+
+      /* Card After Hover */
+      div:hover {
+        background-color: #00ffd0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="Course Img.png" alt="Card Image" />
+      <p><b>Course Name : </b> <span>PW Skills Sigma 2.0</span></p>
+    </div>
+  </body>
+</html>
