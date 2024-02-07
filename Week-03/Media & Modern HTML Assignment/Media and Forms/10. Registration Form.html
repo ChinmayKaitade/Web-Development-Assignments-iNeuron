@@ -1,0 +1,55 @@
+<!-- 10. Create a Registration form with fields for the user's name, email address,
+password, and a checkbox to agree to the terms and conditions. Use the text
+input type for the name and email fields, the password input type for the
+password field, and the checkbox input type for the terms and conditions field. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h2>REGISTRATION FORM</h2>
+    <form>
+      <fieldset>
+        <legend>Enter Your Details</legend>
+
+        <br />
+
+        <div>
+          <label for="name"> Username :</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="email"> Email: </label>
+          <input type="text" id="email" name="email" required />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="password"> Password :</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <br />
+
+        <div>
+          <input type="checkbox" id="checkbox" name="checkbox" required />
+          <label for="checkbox">
+            I Agree to the privacy policy and terms & conditions.
+          </label>
+        </div>
+
+        <br />
+
+        <input type="submit" value="Register" />
+      </fieldset>
+    </form>
+  </body>
+</html>

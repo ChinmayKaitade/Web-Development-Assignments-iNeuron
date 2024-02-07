@@ -1,0 +1,13 @@
+4. List any 3 ways which helps us in improving the accessibility of HTML.
+ans: Ways which helps us in mproving accessibility of HTML are as follows:
+
+1) Text content : Having well-structured content that includes headings, paragraphs, and lists is one of the most 
+helpful accessibility features for users who rely on screen readers.
+
+2) Page layouts : Although it is possible to design a layout using nested <div> elements, it is preferable to utilise proper sectioning 
+elements to encapsulate your main navigation (<nav>), footer (<footer>), repeated content units (<article>), and 
+other relevant content. These elements offer additional semantics to screen readers and other assistive tools, 
+providing users with more context and information about the content they are browsing. 
+
+3) UI controls : When referring to UI controls, these are the essential elements of web documents that users 
+engage with, such as buttons, links, and form controls. 

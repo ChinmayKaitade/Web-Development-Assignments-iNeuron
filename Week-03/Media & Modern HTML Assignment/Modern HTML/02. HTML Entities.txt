@@ -1,0 +1,16 @@
+2. What are HTML Entities? List out 5 commonly used HTML Entities.
+ans: An HTML entity is a piece of text ("string") that begins with an ampersand(&) and ends with a semicolon(;)
+Entities are frequently used to display reserved characters (which would otherwise be interpretued as HTML code),
+and invisible characters (like non-breaking spaces).
+
+Some commonly used HTML Entities are as follows:
+
+1) &amp; (&) :- Interpreted as the begining of an entity or character reference.
+
+2) &alt; (<) :- Interpreted as the begining of a tag.
+
+3) &gt; (>) :- Interpreted as the ending of a tag.
+
+4) &quot; (") :- Interpreted as the begining and end of an attribute's value.
+
+5) &ndash; (-) :- Interpreted as the en dash (half the width of an em unit).    

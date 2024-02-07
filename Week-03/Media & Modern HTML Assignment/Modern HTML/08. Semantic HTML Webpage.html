@@ -1,0 +1,83 @@
+<!-- 08. Create a simple webpage with semantic HTML which has the header, main, and
+footer sections. The header section must contain links to navigate to different
+sections of the webpage. The main section must contain three subsections about
+what is HTML. What is Semantic HTML and a list of commonly used semantic tag ?
+In the end, the footer section must contain your name. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic HTML Webpage</title>
+    <style>
+      h2 {
+        font-size: 36px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>HTML Semantic</h2>
+      <nav>
+        <ul>
+          <li><a href="#What_is_HTML">What is HTML ?</a></li>
+          <li>
+            <a href="#What_is_Semantic_HTML">What is Semantic HTML ?</a>
+          </li>
+          <li>
+            <a href="#Some_Common_Semantic_HTML_Tags"
+              >Some Common Semantic HTML Tag</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="What_is_HTML">
+        <h1>What is HTML ?</h1>
+        <p>
+          HTML stands for HyperText Markup Language. It is the standard markup
+          language used to create web pages. HTML describes the structure of a
+          web page using markup tags, which are used to define different
+          elements on the page such as headings, paragraphs, links, and images.
+        </p>
+      </section>
+
+      <section id="What_is_Semantic_HTML">
+        <h1>What is Semantic HTML ?</h1>
+        <p>
+          Semantic HTML is a way of writing HTML that emphasizes the meaning of
+          the content rather than its appearance. Semantic HTML uses tags that
+          describe the purpose of the content, such as &lt;header&gt;,
+          &lt;nav&gt;, and &lt;section&gt;, rather than tags that describe how
+          the content looks, such as &lt;font&gt; or &lt;center&gt;.
+        </p>
+      </section>
+
+      <section id="Some_Common_Semantic_HTML_Tags">
+        <h1>Some Common Semantic HTML Tags</h1>
+        <p>Here are some common semantic HTML tags:</p>
+        <ul>
+          <li>&lt;header&gt;: Defines a header for a document or section.</li>
+          <li>&lt;nav&gt;: Defines a set of navigation links.</li>
+          <li>&lt;main&gt;: Defines the main content of a document.</li>
+          <li>&lt;section&gt;: Defines a section of a document.</li>
+          <li>
+            &lt;article&gt;: Defines an article or self-contained piece of
+            content.
+          </li>
+          <li>
+            &lt;aside&gt;: Defines content that is not directly related to the
+            main content of a document.
+          </li>
+          <li>&lt;footer&gt;: Defines a footer for a document or section.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>Copyright &copy; Created by Chinmay</footer>
+  </body>
+</html>

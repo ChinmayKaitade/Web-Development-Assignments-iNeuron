@@ -1,0 +1,31 @@
+<!-- 09. Create a simple webpage with a form for a user to enter their personal
+information. The form should contain three input fields with labels "First
+Name", "Last Name", and "Email". The first input field should have a tableindex
+value of 2. The second input field should have a tabindex value of 1. The third
+input field should have a tabindex value of 4. The form should have a submit
+button with a label "Submit" and a tabindex value of 3. Observe the behaviours
+of tab index on your webpage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Information Form</title>
+  </head>
+  <body>
+    <h1>TAG INDEX</h1>
+    <fieldset>
+      <legend>Personal Information Form</legend>
+      <form>
+        <label for="input1">First Name:</label>
+        <input type="text" id="input1" tabindex="2" /><br /><br />
+        <label for="input2">Last Name:</label>
+        <input type="text" id="input2" tabindex="1" /><br /><br />
+        <label for="input3">Email:</label>
+        <input type="email" id="input3" tabindex="4" /><br /><br />
+        <button type="submit" tabindex="3">Submit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+5. Write a short note on tab index.
+ans: The tabindex global attribute allows developers to make HTML elements focusable, allow or prevent them
+from being sequentially focusable (usually with the tab key, hence the name) and determine their relative 
+ordering for sequential focus navigation.
+It specifies the tab order of an element. (when the "tab" button is used for navigating). The tabindex attribute can
+be used on any HTML element (it will validate on any HTML element). It only accepts integers as value from 
+0 to 32767.
+
+There are two additional options available for tabindex:
+
+1) tabindex="0" -  this option allows elements that are not usually able to be focused via the keyboard to become 
+focusable. This value of tabindex is particularly beneficial.
+
+2) tabindex="-1" - this option enables elements that are not typically focusable to receive focus programmatically, 
+such as through JavaScript, or as the target of links.

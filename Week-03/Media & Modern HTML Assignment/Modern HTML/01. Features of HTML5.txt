@@ -1,0 +1,25 @@
+01. List out the features of HTML5.
+ans: Here's a list of some HTML5 features, which are explained in detail below:
+
+1) Semantic Elements : When constructuing an HTML script, the term "semantic" refers to the meaning of the text.
+Semantic, to put it simply, is the use of HTML tags that accurately reflect the content they contain.
+
+2) Audio & Video Support : One of the many HTML5 features is the support for audio and video. 
+It has reduced the hassle of relaying upon third-party sevices such as Adobe Flash player.
+
+3) Canvas Elements : Canvas Elements is a top-notch feature that has made the tedious task of handling
+graphics easier for developers. With the help of Canvas Elements, you can easily draw graphics using Javascript.
+
+4) Geolocation API : The Geolocation API is an HTML feature that is used to access the geographical position of a 
+user, however, it's not accessed unless the user approves for it.
+
+5) Local Storage : It is a modern feature of HTML and several browsers that typically store data on the user's 
+browsers and can access them with the help of Javascript APIs.
+
+6) Responsive Images : Earlier to create responsive images on the web, you have to rely upon several lines of
+CSS and sometimes Javascript, however, HTML5 makes the process handy by including srcset attribute to
+specify multiple versions of an image at different screen resolutions.
+
+7) Web Workers : When you are performing several demanding tasks at once, the browser gets sluggish and
+responds slowly. Beacuse of this, web workers were added to HTML5 to allows scripts to operate in the
+background without interfacing with the UI thread.
