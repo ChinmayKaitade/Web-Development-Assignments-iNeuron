@@ -1,0 +1,134 @@
+<!-- 06. Create a simple Webpage as shown in the image below.
+    - The Webpage must be similar to what we have done in assignment 01.
+    - Add a chatbot image at the bottom right end of the webpage.
+    - The chatbot should be in the same position all the time. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PW skills</title>
+    <style>
+      body {
+        background-color: #1f1f1f;
+      }
+
+      nav {
+        min-height: 100vh;
+        width: 170px;
+        float: left;
+        margin-left: 0;
+        padding-top: 0;
+        background-color: #242b2e;
+      }
+
+      /* Navigation Bar Image */
+      nav > img {
+        width: 100%;
+        background-color: #5da3fa;
+      }
+
+      a {
+        color: white;
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px dashed black;
+        text-decoration: none;
+      }
+
+      section {
+        margin: 0px 50px 0px 230px;
+        color: aliceblue;
+        text-align: justify;
+      }
+
+      section > div > h1 {
+        color: #5a4bda;
+        text-align: center;
+        font-size: 36px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      /* Promotion Image in Center */
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 510px;
+        height: 350px;
+      }
+
+      p {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 25px;
+      }
+
+      /* ChatBot Styling */
+      .chatbot {
+        width: 50px;
+        position: fixed;
+        margin-right: 10px;
+        bottom: 0;
+        right: 0;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Sildebar -->
+    <nav>
+      <img src="download.png" alt="PW Logo" />
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Courses</a>
+      <a href="#">PW Skills Lab</a>
+      <a href="#">Job Portal</a>
+      <a href="#">Experience Portal</a>
+      <a href="#">Hall Of Fame</a>
+      <a href="#">Become an Affiliate</a>
+      <a href="#">FAQs</a>
+      <a href="#">Contact</a>
+      <a href="#">Login</a>
+    </nav>
+
+    <!-- Content Section -->
+    <section>
+      <div>
+        <h1>PW Skills</h1>
+        <p>
+          PW Skills is the result of a continual effort to exponentially
+          increase the employability of every Indian, irrespective of their
+          socioeconomic status. With accessibility and affordability being the
+          support structure of high-quality, industry-relevant courses, PW
+          Skills aims to empower professionals and students alike to either
+          jumpstart their careers or leverage existing skills with new,
+          future-driven upgrades that will help them realise their full
+          potential.
+        </p>
+      </div>
+
+      <!-- Promotinal Banner Image -->
+      <img src="PW Promotion Image.png" alt="Promotinal Image" class="center" />
+
+      <div>
+        <h1>Our Mission</h1>
+        <p>
+          PW Skills' mission is to permeate through every student/professional's
+          outlook towards jobs and change their attitude and perspective from
+          “How Can I Do It?” to “Of Course I Can Do It”. We aim to do this by
+          providing exceptional upskilling courses at affordable rates, while
+          being tech-forward so anyone, anywhere can access and improve their
+          ability to be successful in life.
+        </p>
+      </div>
+    </section>
+
+    <!-- Chatbot Image -->
+    <div>
+      <img src="Chatbot.png" alt="Chatbot" class="chatbot" />
+    </div>
+  </body>
+</html>

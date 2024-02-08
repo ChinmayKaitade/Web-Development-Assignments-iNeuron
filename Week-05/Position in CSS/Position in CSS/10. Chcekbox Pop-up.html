@@ -1,0 +1,203 @@
+<!-- 10. Create a simple terms and conditions pop-up as shown in the below image.
+    * The Pop-up should be a modal similar to what we have built-in question number 08.
+    * The terms and conditions must be inside a separate section that has a vertical 
+      scrollbar to navigate and read the complete content.
+    * Add a chechbox and a button at the end.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox Pop-up</title>
+    <style>
+      body {
+        background-color: #758283;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 32px;
+      }
+
+      .modal {
+        position: absolute;
+        background-color: #fff;
+        width: 800px;
+        margin: auto;
+        border: 0px;
+        border-radius: 5px;
+        padding: 10px;
+        top: 10px;
+        left: 350px;
+        z-index: 2;
+      }
+
+      button {
+        display: block;
+        background-color: #5a4bda;
+        color: white;
+        padding: 10px 25px;
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      .scroll-section {
+        height: 350px;
+        overflow-y: scroll;
+        text-align: justify;
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Page Content -->
+    <section>
+      <h2>Full Stack Web Development 2.0</h2>
+      <p>
+        Learn complete web stack programming with React and Node by doing it the
+        way a full-stack professional would do it. Learn how to create whole web
+        apps from start to finish with one of the most trending tech stacks
+        available. You can learn how to create data-driven applications, as well
+        as how to test, protect, and deploy your code, in this thorough study
+        path. MERN stack is one of the most versatile tech stacks available.
+        Learn front-end and server-side support, to build a multi-platform
+        solution.
+      </p>
+      <h2>Course Details</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+        mollitia unde ipsa doloribus molestiae ullam quidem debitis nobis quos,
+        sequi odit eveniet voluptate. Eligendi voluptatum adipisci magni, ea
+        corrupti quam temporibus nulla earum officia quia? Explicabo amet dolore
+        at, assumenda odit laborum atque aspernatur! Dolorum a, autem,
+        perspiciatis itaque omnis delectus fuga, ab magnam corporis illum
+        aliquam consectetur at unde voluptate. Voluptas ab molestiae deserunt,
+        voluptatem voluptates quaerat mollitia sint incidunt, asperiores
+        perferendis minus illum impedit eius cum vitae voluptatum veniam fugiat
+        inventore saepe aliquam maiores? Nulla enim est ab. At nulla velit dicta
+        odio voluptatibus, quasi nisi officia qui fugit unde enim quam esse
+        commodi? Iure, voluptate dolore iusto dicta deserunt ea quos inventore
+        est quia aliquid esse, veritatis exercitationem quis architecto facere
+        mollitia non adipisci debitis eos aut animi. Culpa voluptatem quas,
+        dolore ea dolorum placeat laudantium doloremque eveniet error, maxime
+        quaerat enim esse ratione magni vel repellat odit suscipit numquam hic
+        sed. Nobis facere odio sed ex, vel commodi expedita quam fugit neque
+        repellat consequatur quos similique laborum totam fuga praesentium
+        impedit cum doloremque rerum. Culpa, praesentium expedita repellendus
+        perspiciatis maiores non debitis amet! Odit sit reiciendis dolore
+        ducimus, sint delectus voluptatibus similique deserunt! Non repellat
+        corporis quas cum odit cupiditate odio asperiores dolor nesciunt,
+        mollitia labore harum eius quidem, numquam laudantium quos
+        necessitatibus neque nobis facere veniam ipsa doloribus aliquid iusto.
+        Atque nulla voluptatem saepe id ut voluptatibus sequi, quod laudantium
+        tenetur. Assumenda illum laborum nihil, voluptas ipsa, repellat nostrum
+        ab illo doloremque debitis eveniet, aperiam eum optio maxime nobis quos!
+        Cumque laborum impedit adipisci sit nostrum at temporibus architecto
+        natus voluptatibus? Suscipit deleniti dolores at officiis nihil quae et
+        eaque quas quis maxime tenetur beatae non exercitationem ducimus rerum
+        vero nam maiores, quod atque. Magni provident deleniti qui repellendus
+        possimus corporis iusto minima, deserunt optio, eligendi quis ea
+        accusamus quod tenetur laboriosam esse sit, ratione reprehenderit beatae
+        recusandae! Consectetur dolorum, inventore aut tempore a alias sapiente
+        officia minus corrupti aliquid non ipsum. Dolores voluptatum error
+        voluptatibus autem aspernatur, sed a laudantium accusantium doloremque
+        hic facere architecto eligendi iste tempora commodi dolorem repudiandae
+        dicta odit voluptate distinctio omnis cum delectus? Eveniet saepe, sed
+        illum rem dignissimos hic exercitationem itaque? Suscipit quos assumenda
+        quas sunt saepe ea aspernatur optio odit, officia eius beatae libero.
+        Illum libero odio hic alias eos, labore autem sunt, quia nihil aliquid,
+        optio repudiandae tempora dolor distinctio quasi doloremque dignissimos
+        fuga. Iure, quasi. Totam asperiores minus, id rem amet enim dolorum
+        harum dolor fuga, explicabo quae illum cumque laboriosam veniam iste
+        unde ea, quos quidem nemo quam aliquid dignissimos autem. Atque neque
+        dicta accusantium nobis similique dolorum facere nam voluptates minus
+        perspiciatis, voluptate illum deserunt nihil id unde praesentium earum
+        tempora odio deleniti culpa hic inventore sequi quaerat et! Enim modi
+        non explicabo impedit fugiat consequuntur omnis, sit eligendi dolorem
+        sed vitae. Quaerat laboriosam fugit obcaecati saepe illum fugiat
+        nesciunt ducimus hic officia aut tempore magni explicabo iure, beatae
+        soluta? Itaque excepturi aut rerum, magni dignissimos magnam enim alias
+        asperiores id assumenda nobis, perspiciatis reprehenderit corrupti
+        autem, nihil laborum atque ab quia debitis? Optio dolore nobis aliquam
+        deleniti? Minima recusandae repellat voluptatum fugit libero iusto
+        mollitia necessitatibus dolorum impedit repellendus id, in facere neque
+        facilis doloremque ratione tempora. Accusamus alias tempore commodi
+        reprehenderit sed beatae ex? Odio adipisci quidem id excepturi, animi
+        quo autem voluptatum fuga explicabo doloribus dicta ad tenetur omnis
+        aspernatur suscipit odit nulla iure officiis corrupti eligendi totam
+        quaerat atque! Quos dignissimos itaque suscipit rerum amet repellat
+        aperiam quas velit, similique voluptates maxime, voluptatibus hic, ea
+        eveniet? Fugit corporis facere sed unde cupiditate accusantium tempore
+        at hic! Voluptatibus blanditiis, porro adipisci suscipit tempora
+        officiis doloremque neque officia. Est ad mollitia rem at architecto
+        vero maxime. Quasi fuga nesciunt sit aliquam fugiat repudiandae facilis
+        ea similique veniam reprehenderit consequuntur nulla in cumque molestias
+        officiis tenetur quo optio, debitis doloremque deleniti voluptas
+        voluptatem! Nemo sed aperiam velit quia incidunt earum cumque nostrum?
+      </p>
+    </section>
+
+    <!-- Modal Content -->
+    <section class="modal">
+      <h1>Terms & Conditions</h1>
+      <hr />
+      <p class="scroll-section">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum
+        optio, vero natus ipsa minus eveniet quis ad nesciunt voluptatibus
+        provident debitis sit officiis expedita ipsam aut! Facilis, itaque
+        numquam. Dolore vero natus et, mollitia quae laboriosam, aut eaque
+        obcaecati qui nobis veritatis corrupti maxime quidem neque? Odio aperiam
+        vitae totam, temporibus minima ab, dolor earum iure debitis quisquam
+        dicta obcaecati nam provident veritatis sequi fugiat. Labore ad cumque
+        iure error ipsum autem sapiente obcaecati eius amet, assumenda omnis
+        illum provident mollitia, nam hic quam reiciendis eligendi fugit! Quod
+        magni explicabo expedita, in facere sunt culpa consectetur doloribus
+        voluptate amet. Debitis, possimus facilis? Vero sunt possimus ex
+        reiciendis, enim incidunt quis obcaecati iure, autem dolorum inventore
+        sapiente libero tenetur corporis voluptate aut voluptas porro similique
+        accusamus. Est a eligendi ut molestias earum possimus minus consectetur
+        ratione eveniet voluptatum quas qui tempora exercitationem nihil
+        cupiditate nisi odit deleniti velit, sapiente iste, ex nobis iusto. Odio
+        quaerat illo consequatur ad dicta rerum necessitatibus sunt iste
+        sapiente unde velit, ab fugit doloremque maiores ratione nostrum hic
+        adipisci in ipsa rem, praesentium quod laudantium libero. Debitis enim
+        blanditiis nulla alias reprehenderit velit, ullam, dolor explicabo
+        molestias pariatur expedita consectetur eum dolore. Repudiandae
+        aspernatur a asperiores velit, maiores eveniet neque suscipit deleniti
+        minus aliquid rerum expedita ipsa! Incidunt natus porro repudiandae
+        ipsam qui beatae hic, nihil quos quod reiciendis harum dolor nisi veniam
+        cum aut neque vitae optio, placeat excepturi corrupti omnis rerum amet
+        quas reprehenderit! Necessitatibus molestias deserunt est hic. A, quo.
+        Laudantium atque perspiciatis dolores suscipit aspernatur delectus
+        facere saepe reiciendis nobis, sunt dolorem culpa asperiores qui quas
+        temporibus, autem blanditiis modi laboriosam corrupti minus error,
+        explicabo sequi ratione. Veritatis, dolor? Perspiciatis praesentium,
+        excepturi sapiente necessitatibus odio, inventore voluptas facilis fugit
+        omnis, ullam iusto suscipit aperiam perferendis laborum impedit.
+        Provident aspernatur nulla dignissimos rerum nesciunt adipisci fugiat
+        cum fuga illo. Impedit nemo repellendus, ipsum non iste eaque neque est
+        quas in repellat eius et debitis illum provident totam perspiciatis,
+        doloribus blanditiis culpa modi eligendi. Doloremque sint commodi
+        provident nam neque alias vel cumque, magnam blanditiis tempore
+        aspernatur? Quos soluta quasi molestias aliquam fuga.
+        <br />
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Exercitationem, obcaecati! Praesentium, reprehenderit rerum. In dolore
+        officiis enim sed sapiente perferendis animi nulla corrupti! Rem modi
+        enim quisquam excepturi at aliquid.
+      </p>
+      <hr />
+      <input type="checkbox" name="checkbox" id="checkbox" />
+      <label for="checkbox"
+        >I agree to the Terms & Conditions mentioned above</label
+      >
+
+      <!-- Submit Button -->
+      <button class="button">Submit</button>
+    </section>
+  </body>
+</html>

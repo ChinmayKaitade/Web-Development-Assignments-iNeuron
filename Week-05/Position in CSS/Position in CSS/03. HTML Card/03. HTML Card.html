@@ -1,0 +1,111 @@
+<!-- 03. Create a simple webpage as shown in the below image.
+  * The webpage must contain a card with some image and text.
+  * The card contains two column below. Use CSS float property to achieve the outcome.
+    No table must be used. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Card</title>
+    <style>
+      .container {
+        border: 3px solid black;
+        padding: 10px;
+      }
+
+      .main-section {
+        width: 300px;
+        height: 620px;
+        background-color: white;
+        border: 1px solid black;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+      }
+
+      .title {
+        font-size: 13px;
+      }
+
+      .left-section {
+        float: left;
+        width: 50%;
+      }
+
+      .right-section {
+        float: right;
+        width: 50%;
+      }
+
+      .left-text {
+        font-size: 12px;
+        font-weight: bold;
+        color: #4966cc;
+      }
+
+      .right-text {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main-Container -->
+    <div class="container">
+      <!-- Main-Section of Webpage -->
+      <section class="main-section">
+        <!-- Logo of HTML5 -->
+        <div>
+          <img src="HTML5 Logo.png" alt="HTML Image" />
+        </div>
+
+        <!-- Title for Logo -->
+        <p class="title">The Official logo of the latest version,HTML5.</p>
+        <!-- Left-Section of Webpage -->
+        <section class="left-section">
+          <p class="left-text">Filename extension</p>
+          <br />
+          <p class="left-text">Internet media type</p>
+          <p class="left-text">Type Code</p>
+          <p class="left-text">Uniform Type Identifier (UTI)</p>
+          <p class="left-text">Developed by</p>
+          <p class="left-text">Initial release</p>
+          <p class="left-text">Latest release</p>
+          <p class="left-text">Type of format</p>
+          <p class="left-text">Container for</p>
+          <p class="left-text">Container by</p>
+          <p class="left-text">Extended from</p>
+          <p class="left-text">Extended to</p>
+          <p class="left-text">Open format?</p>
+          <p class="left-text">Website</p>
+        </section>
+
+        <!-- Right-Section of Webpage -->
+        <section class="right-section">
+          <p class="right-text">.html</p>
+          <p class="right-text">.htm</p>
+          <p class="right-text" style="margin-top: 16px">text/HTML</p>
+          <p class="right-text">text/HTML</p>
+          <p class="right-text">public.html</p>
+          <p class="right-text" style="margin-top: 26px">WHATWG</p>
+          <p class="right-text">1993; 30 years ago</p>
+          <p class="right-text">HTML5</p>
+          <p class="right-text">Document</p>
+          <p class="right-text">HTML elements</p>
+          <p class="right-text">Web browsers</p>
+          <p class="right-text">SGML</p>
+          <p class="right-text">XHTML</p>
+          <p class="right-text">Yes</p>
+          <p class="right-text">html.spec.whatwg.org</p>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

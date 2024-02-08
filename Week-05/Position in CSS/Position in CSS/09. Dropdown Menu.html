@@ -1,0 +1,71 @@
+<!-- 09. Design a customized dropdown menu as shown in below image.
+    * Initially, there should be a message displayed saying "Hover to show the dropdown".
+      You can use the span tag or button tag to achieve this.
+    * Once hovering the dropdown menu should be visible and there should be a horizontal
+      scroll to view all the options.
+    * You can achieve this by using the max-height property to restrict the height of the 
+      drop-down and the overflow property to get the vertical scroll bar to navigate
+      between items.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menu</title>
+    <style>
+      .dropdown {
+        position: relative;
+        top: 10px;
+        display: inline-block;
+        padding: 10px 25px;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+        width: 210px;
+      }
+
+      .dropdown-option {
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .dropdown-option:hover {
+        background-color: #f1f1f1;
+      }
+
+      button {
+        font-size: medium;
+        background-color: #ff3c3c;
+        border: none;
+        padding: 15px 25px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #383434;
+        max-height: 200px;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button>Hover To View Options</button>
+      <div class="dropdown-content">
+        <div class="dropdown-option">Option 1</div>
+        <div class="dropdown-option">Option 2</div>
+        <div class="dropdown-option">Option 3</div>
+        <div class="dropdown-option">Option 4</div>
+        <div class="dropdown-option">Option 5</div>
+        <div class="dropdown-option">Option 6</div>
+        <div class="dropdown-option">Option 7</div>
+        <div class="dropdown-option">Option 8</div>
+        <div class="dropdown-option">Option 9</div>
+      </div>
+    </div>
+  </body>
+</html>
