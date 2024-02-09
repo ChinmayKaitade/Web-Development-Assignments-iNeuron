@@ -1,0 +1,45 @@
+<!-- 01. Create a photo gallery as shown in the below image.
+    * Use CSS flex to align the images side by side.
+    * Using CSS flexbox properties, ensure that even if new images are added, the website flow is not broken. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <style>
+      .gallery {
+        display: flex;
+        direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 120px;
+      }
+      .gallery img {
+        border: 3px solid black;
+        margin-right: 15px;
+        margin-top: 15px;
+        width: 300px;
+        height: 200px;
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="gallery">
+      <img src="photo1.jpg" alt="Photo-1" />
+      <img src="photo2.jpg" alt="Photo-2" />
+      <img src="photo3.jpg" alt="Photo-3" />
+      <img src="photo4.jpg" alt="Photo-4" />
+      <img src="photo5.jpg" alt="Photo-5" />
+      <img src="photo6.jpg" alt="Photo-6" />
+      <img src="photo7.jpg" alt="Photo-7" />
+      <img src="photo8.jpg" alt="Photo-8" />
+      <img src="photo9.jpg" alt="Photo-9" />
+      <img src="photo10.jpg" alt="Photo-10" />
+      <img src="photo11.jpg" alt="Photo-11" />
+      <img src="photo12.jpg" alt="Photo-12" />
+    </section>
+  </body>
+</html>

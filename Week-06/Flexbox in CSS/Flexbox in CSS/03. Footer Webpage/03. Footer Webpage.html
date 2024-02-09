@@ -1,0 +1,131 @@
+<!-- 03. Create a simple footer using CSS flexbox as shown in the below image.
+    * The footer must contain some logos, email, and navigation links.
+    * The position of the footer must be fixed to the bottom. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <style>
+      .container {
+        background-color: #1b2124;
+        color: white;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400px;
+        width: 100%;
+        margin: 50px 10px;
+        gap: 20px;
+      }
+
+      .section1 {
+        margin-top: 30px;
+        margin-left: 110px;
+        max-width: 40%;
+        width: 100%;
+      }
+
+      img {
+        width: 120px;
+      }
+
+      .section2 {
+        max-width: 40%;
+        width: 100%;
+      }
+
+      .section3 {
+        max-width: 40%;
+        width: 100%;
+      }
+
+      td {
+        width: 160px;
+        height: 50px;
+      }
+
+      .heading {
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+
+      .mail {
+        margin-top: 4px;
+        margin-bottom: 60px;
+      }
+
+      .title {
+        font-size: 25px;
+        font-weight: normal;
+      }
+
+      hr {
+        margin-right: 50%;
+        border: 1px solid #c48e4c;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="footer">
+        <div class="section1">
+          <img src="Logo.png" alt="Logo" />
+          <p class="heading">Email us:</p>
+          <p class="email">support@pwskills.com</p>
+          <img
+            src="https://pwskills.com/images/iso-9001-2015.svg"
+            alt="certified"
+          />
+          <p>ISO 9001</p>
+        </div>
+
+        <div class="section2">
+          <h1 class="title">PW Skills</h1>
+          <hr />
+          <table>
+            <tr>
+              <td>About Us</td>
+              <td>Contact Us</td>
+            </tr>
+            <tr>
+              <td>FAQs</td>
+              <td>
+                Job <br />
+                assistance
+              </td>
+            </tr>
+            <tr>
+              <td>Privacy policy</td>
+              <td>
+                Terms and <br />
+                conditions
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="section3">
+          <h1 class="title">Products</h1>
+          <hr />
+          <p>PW Skills Lab</p>
+          <p>Job Portal</p>
+          <p>Experience Portal</p>
+          <p>Become an affiliate</p>
+          <p>Hall of fame</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!-- 08. Create a simple avatar design as shown in the image below.
+    * Pick any 4 random images and achieve the output. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar Design</title>
+    <style>
+      body {
+        background-color: #151d21;
+      }
+
+      .avatar-design {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      img {
+        width: 200px;
+        border-radius: 50%;
+        position: relative;
+        margin-left: -50px;
+        border: 8px solid #fff;
+      }
+
+      .avatar1 {
+        width: 200px;
+        height: 200px;
+        z-index: 5;
+      }
+
+      .avatar2 {
+        width: 200px;
+        height: 200px;
+        z-index: 4;
+      }
+
+      .avatar3 {
+        width: 200px;
+        height: 200px;
+        z-index: 3;
+      }
+
+      .avatar4 {
+        width: 200px;
+        height: 200px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="avatar-design">
+      <img src="Avatar 1.jpg" alt="avatar1" class="avatar1" />
+      <img src="Avatar 2.jpg" alt="avatar2" class="avatar2" />
+      <img src="Avatar 3.jpg" alt="avatar3" class="avatar3" />
+      <img src="Avatar 4.jpg" alt="avatar4" class="avatar4" />
+    </section>
+  </body>
+</html>

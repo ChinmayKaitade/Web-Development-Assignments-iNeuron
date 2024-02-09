@@ -1,0 +1,148 @@
+<!-- 05. Create a simple webpage with multiple columns as shown in below image.
+    * Make sure all columns have equal height, regardless of their content -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Stack Web Development</title>
+    <style>
+      body {
+        background-color: #242b2e;
+        display: flex;
+        justify-content: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 1200px;
+        width: 100%;
+      }
+
+      h1 {
+        text-align: center;
+        color: #ff4242;
+      }
+
+      .multi-columns {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .heading {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+
+      img {
+        width: 150px;
+      }
+
+      /* Content Section in Columns */
+      p {
+        padding: 0px 20px;
+      }
+
+      .html-section {
+        background-color: #35cade;
+        color: #111010;
+        border: 4px solid black;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        height: 620px;
+      }
+
+      .css-section {
+        background-color: #e03b8e;
+        color: #111010;
+        border: 4px solid black;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+      }
+
+      .javascript-section {
+        background-color: #5920cbfe;
+        color: #111010;
+        border: 4px solid black;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main Container for multiple columns  -->
+    <div class="container">
+      <h1>Full Stack Web Development</h1>
+      <div class="multi-columns">
+        <!-- HTML Column Section -->
+        <section class="html-section">
+          <h2 class="heading">HTML</h2>
+          <img src="HTML Logo.webp" alt="HTML Logo" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            magni repellendus praesentium cupiditate voluptate saepe provident
+            incidunt pariatur, possimus voluptates ratione ea eum molestias nam
+            animi officiis beatae in, necessitatibus repudiandae. Voluptatem
+            quia cumque nostrum, corporis non sint veniam alias porro expedita
+            dicta cum adipisci sequi nulla repellat iure nam doloribus facere
+            fugiat blanditiis cupiditate animi dolor quae vel. Sunt corrupti
+            voluptatibus vero ducimus dignissimos eaque minus voluptatem esse
+            voluptates earum ipsum maxime consectetur perferendis architecto
+            veritatis suscipit aut error nobis eius harum tempore veniam, odio
+            obcaecati. Perspiciatis, corrupti quibusdam? Maxime dignissimos et
+            vitae necessitatibus ipsam perferendis delectus quas quos asperiores
+            quod sit illo, id quam dolor voluptatem sint nostrum.
+          </p>
+        </section>
+
+        <!-- CSS Column Section -->
+        <section class="css-section">
+          <h2 class="heading">CSS</h2>
+          <img src="CSS Logo.webp" alt="CSS Logo" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            accusantium harum sit, nihil voluptatibus labore! Nam minima numquam
+            velit. Quisquam sunt et quaerat tempore illum at sint eius assumenda
+            optio dicta eos cumque voluptatibus numquam quas placeat laboriosam
+            qui similique molestias a delectus, officia harum ipsa quos laborum?
+            Vel officia ea suscipit molestiae autem, modi id officiis fugiat
+            quos, sed consequatur quaerat. A accusantium exercitationem ducimus
+            sunt laboriosam architecto. Possimus, autem obcaecati! At modi magni
+            officiis ea consectetur maxime mollitia quibusdam voluptatum! Quas
+            praesentium reiciendis velit obcaecati omnis sint officiis.
+          </p>
+        </section>
+
+        <!-- JavaScript Column Section -->
+        <section class="javascript-section">
+          <h2 class="heading">JavaScript</h2>
+          <img src="Javascript Logo.png" alt="JavaScript Logo" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+            porro dolor quos voluptates, labore placeat impedit exercitationem
+            quo quasi veritatis quia quod molestiae cumque maiores temporibus
+            assumenda consequuntur suscipit vel officia. Maiores unde nostrum
+            minima eaque cum id, dolorum eum quos doloribus veniam at suscipit
+            commodi velit cumque nemo dolore numquam voluptate incidunt magni
+            atque consequuntur eius amet ea! Ullam necessitatibus dicta vitae
+            nisi a consequuntur ea, earum sed quae eligendi ad saepe aperiam ex
+            dolorem.
+          </p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!-- 04. Create a simple Gmail landing page clone as shown in the below image.
+    * Reference Link: https://www.google.com/intl/en_in/gmail/about/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail Clone</title>
+    <style>
+      /* font import */
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+      }
+
+      .main-container {
+        max-width: 1200px;
+        width: 100%;
+      }
+
+      nav {
+        padding: 0px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo > img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .logo > p {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      /* Navigation Bar buttons */
+      .nav-buttons {
+        display: flex;
+        gap: 50px;
+      }
+
+      .button-1 {
+        border: none;
+        font-size: 15px;
+        background-color: transparent;
+        font-weight: 400;
+        color: #1a73e8;
+      }
+
+      .button-2 {
+        border: 1px solid #2c2c2c5e;
+        border-radius: 5px;
+        padding: 9px 20px;
+        font-size: 15px;
+        background-color: transparent;
+        font-weight: 400;
+        color: #1a73e8;
+      }
+
+      .button-3 {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 15px;
+        background-color: #1a73e8;
+        font-weight: 400;
+        color: white;
+      }
+
+      .sub-container {
+        display: flex;
+        justify-content: space-around;
+        gap: 100px;
+      }
+
+      .section-1 {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 30px;
+      }
+
+      .section-1 > h2 {
+        font-size: 50px;
+        margin-bottom: 0px;
+      }
+
+      .section-1 > p {
+        margin: 10px 0px;
+      }
+
+      /* Section-2 buttons */
+      .home-buttons {
+        display: flex;
+        margin-top: 30px;
+        gap: 50px;
+      }
+
+      .section-2 {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .section-2 > img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="main-container">
+      <nav>
+        <div class="logo">
+          <img src="logo-gmail.png" alt="logo" />
+          <p>Gmail</p>
+        </div>
+        <div>
+          <nav class="nav-buttons">
+            <button class="button-1">For Work</button>
+            <button class="button-2">Sign in</button>
+            <button class="button-3">Create an account</button>
+          </nav>
+        </div>
+      </nav>
+
+      <hr />
+
+      <!-- Main Content for landpage -->
+      <main class="sub-container">
+        <div class="section-1">
+          <h1>
+            Secure, smart, <br />
+            and easy to use <br />
+            email
+          </h1>
+          <p>
+            Get more done with Gmail. Now integrated with Google <br />
+            Chat, Google meet, and more, all in one place.
+          </p>
+          <section class="home-buttons">
+            <button class="button-3">Create an account</button>
+            <button class="button-1">For Work</button>
+          </section>
+        </div>
+
+        <div class="section-2">
+          <img src="Image Content.webp" alt="Clone Image" />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

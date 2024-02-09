@@ -1,0 +1,52 @@
+<!-- 07. Create a simple webpage alert bar as shown in the below image.
+    * Make sure the image is permanently fixed to the top of the screen. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Warning Alert!!</title>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 1800, "GRAD" 0, "opsz" 48;
+        font-size: 30px;
+        padding: 0px 20px;
+      }
+
+      .alert-box > div {
+        background-color: #ffa2a2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: #ff2727;
+        border-radius: 7px;
+        border-left: 4px solid #ef1d1d;
+        top: 0;
+        position: fixed;
+        margin-top: 10px;
+        height: 50px;
+        width: 98%;
+      }
+
+      span {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="alert-box">
+      <div>
+        <span class="material-symbols-outlined">⚠️</span>
+        <p>Warning!! This Action Is Not Allowed.</p>
+        <span class="material-symbols-outlined">✕</span>
+      </div>
+    </section>
+  </body>
+</html>

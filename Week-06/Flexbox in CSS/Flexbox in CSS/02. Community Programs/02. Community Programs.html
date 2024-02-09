@@ -1,0 +1,102 @@
+<!-- 02. Create a simple Webpage as shown in the image below.
+    * The Webpage must contain course details.
+    * The cards must be aligned side by side. If any card gets added, the size of the cards must not be 
+      varied and the flow must be moved to the next row automatically. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Programs</title>
+    <style>
+      body {
+        background-color: #cad5e2;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #7b31ff;
+        font-size: 35px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin-bottom: 10px;
+      }
+
+      .line {
+        text-align: center;
+        margin-top: 15px;
+        color: #575757;
+        font-size: 12px;
+        font-weight: 550;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 90px;
+      }
+
+      .card {
+        max-width: 300px;
+        background-color: #fff;
+        padding: 10px;
+        border: 0;
+        border-radius: 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .course {
+        color: #7b31ff;
+        font-weight: bold;
+      }
+
+      .educator {
+        font-size: 13px;
+        font-weight: lighter;
+      }
+
+      .price {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section of Webpage -->
+    <header>
+      <h1>Community Programs</h1>
+      <p class="line">Open to all pro-level classes on Youtube for free.</p>
+    </header>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="Course-1.jpg" alt="course1" />
+        <p class="course">
+          Masterclass Understanding APIs in Web Development with RoadMap
+        </p>
+        <p class="educator">Hitesh Choudhary</p>
+        <p class="price">FREE</p>
+      </div>
+      <div class="card">
+        <img src="Course-2.jpg" alt="course2" />
+        <p class="course">
+          Masterclass Cracking The Coding Interview LinkedList
+        </p>
+        <p class="educator">Vishwa Mohan</p>
+        <p class="price">FREE</p>
+      </div>
+      <div class="card">
+        <img src="Course-3.jpg" alt="course3" />
+        <p class="course">Masterclass Important of DSA in Modern Programming</p>
+        <p class="educator">Priya Bhatia</p>
+        <p class="price">FREE</p>
+      </div>
+    </div>
+  </body>
+</html>
