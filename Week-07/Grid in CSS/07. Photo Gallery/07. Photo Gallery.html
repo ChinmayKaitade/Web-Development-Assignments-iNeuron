@@ -1,0 +1,84 @@
+<!-- 07. Design a visually stunning photo gallery using CSS Grid for a photograpger's
+portfolio website. The goal is to create a dynamic layout that showcase the
+photographer's images in an organized and visually appearing manner. By
+leverging the power of CSS Grid, ensure that the gallery provides a seamless and
+immpresive user experience, allowing visitors to easily navigate through the
+photos and appreciate the photograpger's work. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <style>
+      .gallery-photo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 220px);
+        gap: 15px;
+        padding: 15px;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+
+      .image1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .image2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .image3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .image4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      .image5 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .image6 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery-photo">
+      <img src="Photo1.webp" alt="image1" class="image1" />
+      <img src="Photo2.webp" alt="image2" class="image2" />
+      <img src="Photo3.webp" alt="image3" class="image3" />
+      <img src="Photo4.webp" alt="image4" class="image4" />
+      <img src="Photo5.webp" alt="image5" class="image5" />
+      <img src="Photo6.webp" alt="image6" class="image6" />
+    </div>
+  </body>
+</html>

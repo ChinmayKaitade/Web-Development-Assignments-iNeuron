@@ -1,0 +1,133 @@
+<!-- 02. The landing page designed in question 01 showcases an impressive layout and
+design. However, it lacks a crucial component - a navigation bar. Without a
+navigation bar, users may find navigating through different sections of the
+website challenging. To address this issues, design a navigation bar using CSS
+Grid, as shown in the image below as of now there is no need to update the
+navigation links. Navigation Bars enhance user experience, improve usability,
+and ensure easy access to various pages and content. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      /* Navigation Bar Styling */
+
+      nav {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      nav img {
+        width: 50px;
+      }
+
+      nav a {
+        text-decoration: none;
+        padding-right: 50px;
+        color: #000;
+      }
+
+      nav a:hover {
+        color: #00ee7f;
+        font-weight: bold;
+      }
+
+      nav button {
+        margin-left: 60%;
+        padding: 10px 0px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #00ff73;
+        color: #000;
+        font-weight: bold;
+      }
+      /* Navigation Styling Ends */
+
+      /* Hero Section Styling */
+      .main-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 20px;
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .left-section {
+        padding: 0px 50px;
+      }
+
+      .right-section {
+        background-color: yellow;
+        height: 100%;
+        max-height: 90vh;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        color: #4e695f;
+      }
+
+      button {
+        margin-top: 25px;
+        padding: 10px 40px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: medium;
+      }
+
+      .right-section > img {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar Section -->
+    <nav>
+      <img src="Restaurant Logo.png" alt="Logo" />
+      <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <button style="margin-top: 5px">Login</button>
+    </nav>
+
+    <!-- Hero-Container Section -->
+    <section class="main-container">
+      <div class="left-section">
+        <h1>Healthy Food</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
+          deleniti architecto? Obcaecati consequatur iste autem beatae et,
+          nesciunt aliquam neque itaque doloribus quos dolorum delectus dolor ad
+          aliquid praesentium ab deserunt, exercitationem, quibusdam error?
+          Numquam nobis delectus sed ad, alias voluptas incidunt placeat
+          possimus voluptatibus id sunt nostrum nesciunt odit quam quia itaque
+          doloribus laborum soluta. Vitae minus vel rem possimus sequi optio
+          omnis perspiciatis molestiae ea dolorem fugiat, dolorum amet.
+        </p>
+        <button>Read More</button>
+      </div>
+
+      <div class="right-section">
+        <img class="hero-image" src="Hero Image.jpg" alt="hero-image" />
+      </div>
+    </section>
+  </body>
+</html>

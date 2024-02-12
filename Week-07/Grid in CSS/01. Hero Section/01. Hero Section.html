@@ -1,0 +1,80 @@
+<!-- 01. Imagine you are working with a team for a restaurant client. You have been
+responsible for designing a landing page hero section for a restaurant
+specializing in serving healthy food. Your objective is to recreate the layout
+displayed in the given image using a CSS grid. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <style>
+      .main-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 2px solid black;
+        padding: 10px;
+        gap: 20px;
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .left-section {
+        padding: 0px 50px;
+      }
+
+      .right-section {
+        background-color: yellow;
+        height: 100%;
+        max-height: 90vh;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        color: #4e695f;
+      }
+
+      button {
+        margin-top: 25px;
+        padding: 10px 40px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: medium;
+      }
+
+      .right-section > img {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="left-section">
+        <h1>Healthy Food</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
+          deleniti architecto? Obcaecati consequatur iste autem beatae et,
+          nesciunt aliquam neque itaque doloribus quos dolorum delectus dolor ad
+          aliquid praesentium ab deserunt, exercitationem, quibusdam error?
+          Numquam nobis delectus sed ad, alias voluptas incidunt placeat
+          possimus voluptatibus id sunt nostrum nesciunt odit quam quia itaque
+          doloribus laborum soluta. Vitae minus vel rem possimus sequi optio
+          omnis perspiciatis molestiae ea dolorem fugiat, dolorum amet.
+        </p>
+        <button>Read More</button>
+      </div>
+
+      <div class="right-section">
+        <img class="hero-image" src="Hero Image.jpg" alt="hero-image" />
+      </div>
+    </section>
+  </body>
+</html>

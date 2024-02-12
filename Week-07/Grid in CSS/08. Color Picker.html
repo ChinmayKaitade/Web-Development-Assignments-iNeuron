@@ -1,0 +1,87 @@
+<!-- 08. Create a simple color picker using CSS Grid to enable users to select colors
+effeciently. The objective is to design a visually appealing interface that
+allows users to choose colors and obtain their corresponding color codes. By
+leveraging CSS Grid, ensure a user-friendly layout that simplifies the color
+selection process. Let's Build a color picker similar to the one shown in the
+below image. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: #808080;
+        background-color: #2e2c2c;
+      }
+
+      .container {
+        max-width: 1400px;
+        width: 100%;
+        margin: auto;
+      }
+
+      .color-picker {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0px 50px;
+        gap: 50px;
+        display: grid;
+      }
+
+      .box {
+        padding: 200px 0px;
+        width: 100%;
+        border-radius: 20px;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        color: #000;
+      }
+
+      .box1 {
+        background-color: #8d3daf;
+      }
+      .box2 {
+        background-color: #e07c24;
+      }
+      .box3 {
+        background-color: #758283;
+      }
+      .box4 {
+        background-color: #e03b8b;
+      }
+      .box5 {
+        background-color: #ff6666;
+      }
+      .box6 {
+        background-color: #03c6c7;
+      }
+      .box7 {
+        background-color: #cad5e2;
+      }
+      .box8 {
+        background-color: #35bdd0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="font-size: 40px">Feeling Fancy</h1>
+      <div class="color-picker">
+        <p class="box box1">#8D3DAF</p>
+        <p class="box box2">#E07C24</p>
+        <p class="box box3">#758283</p>
+        <p class="box box4">#E03B8B</p>
+        <p class="box box5">#FF6666</p>
+        <p class="box box6">#03C6C7</p>
+        <p class="box box7">#CAD5E2</p>
+        <p class="box box8">#35BDD0</p>
+      </div>
+    </div>
+  </body>
+</html>

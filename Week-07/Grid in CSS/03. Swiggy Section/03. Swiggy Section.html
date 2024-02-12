@@ -1,0 +1,191 @@
+<!-- 03. When learning through project-based laerning, it is crucial to incorporate
+existing features that are interesting and relevant to our website project. To
+achieve this, let's integrate a section of Swiggy.com into our project. Let's
+aim to integrate a section of Swiggy.com into our project, leveraging its
+engaging design and fuctionality. The output expected is shown in the below
+image. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy Section</title>
+    <style>
+      /* Navigation Bar Styling  */
+      nav {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      nav img {
+        width: 50px;
+      }
+
+      nav a {
+        text-decoration: none;
+        padding-right: 50px;
+        color: #000;
+      }
+
+      nav a:hover {
+        color: #00ee7f;
+        font-weight: bold;
+      }
+
+      nav button {
+        margin-left: 60%;
+        padding: 10px 0px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #00ff73;
+        color: #000;
+        font-weight: bold;
+      }
+
+      /* Hero Section Styling Start */
+      .main-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 20px;
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .left-section {
+        padding: 0px 50px;
+      }
+
+      .right-section {
+        background-color: yellow;
+        height: 100%;
+        max-height: 90vh;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      p {
+        color: #4e695f;
+      }
+
+      button {
+        margin-top: 25px;
+        padding: 10px 40px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: medium;
+      }
+
+      .right-section > img {
+        height: 100%;
+      }
+
+      /* Swiggy Section Start */
+      .swiggy-section {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        background-color: #2b1e16;
+      }
+
+      .sub-section {
+        margin: 10px 50px;
+        text-align: center;
+      }
+
+      .sub-section img {
+        width: 150px;
+      }
+
+      .sub-section h1 {
+        color: #fff;
+      }
+
+      .sub-section p {
+        color: #8c6e54;
+      }
+
+      .last-heading {
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar Section -->
+    <nav>
+      <img src="Restaurant Logo.png" alt="Logo" />
+      <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <button style="margin-top: 5px">Login</button>
+    </nav>
+
+    <!-- Hero-Container Section -->
+    <section class="main-container">
+      <div class="left-section">
+        <h1>Healthy Food</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
+          deleniti architecto? Obcaecati consequatur iste autem beatae et,
+          nesciunt aliquam neque itaque doloribus quos dolorum delectus dolor ad
+          aliquid praesentium ab deserunt, exercitationem, quibusdam error?
+          Numquam nobis delectus sed ad, alias voluptas incidunt placeat
+          possimus voluptatibus id sunt nostrum nesciunt odit quam quia itaque
+          doloribus laborum soluta. Vitae minus vel rem possimus sequi optio
+          omnis perspiciatis molestiae ea dolorem fugiat, dolorum amet.
+        </p>
+        <button>Read More</button>
+      </div>
+
+      <div class="right-section">
+        <img class="hero-image" src="Hero Image.jpg" alt="hero-image" />
+      </div>
+    </section>
+
+    <!-- Swiggy Order Section -->
+    <div class="swiggy-section">
+      <div class="sub-section">
+        <img src="Image1.png" alt="image1" />
+        <h1>No Minimum Order</h1>
+        <p>
+          Order in for yourself or for the group, with no restrictions on order
+          value
+        </p>
+      </div>
+      <div class="sub-section">
+        <img src="Image2.webp" alt="image2" />
+        <h1>Live Order Tracking</h1>
+        <p>
+          Know where your order is at all times, from the restaurent to your
+          doorstep
+        </p>
+      </div>
+      <div class="sub-section">
+        <img src="Image3.webp" alt="image3" class="img3" />
+        <h1 class="last-heading">Lightning-Fast Delivery</h1>
+        <p>
+          Experience Swiggy's superfast delivery for food delivered fresh & on
+          time
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!-- 06. Design a school timetable using CSS Grid, eliminating the use of HTML
+tables. The objective is to create a visually appealing and responsive layout
+that effectively represents the weekly schedule of subjects and time slots. By
+leveraging the power of CSS Grid, ensure that the timetable is flexible, easy to
+maintain, and provides a seamless user experience for students and teachers
+alike. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Timetable</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .time-table {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        border: 3px solid black;
+        padding: 8px;
+        background-color: #448fed;
+      }
+
+      div {
+        padding: 20px 5px;
+        border: 2px dotted black;
+        text-align: center;
+        background-color: #16dbdc;
+      }
+
+      .row1 {
+        font-weight: bold;
+        font-size: large;
+        padding: 40px 0px;
+        background-color: #ff4646;
+      }
+
+      .bold-text {
+        font-weight: bold;
+        background-color: #8d3daf;
+      }
+
+      .col-span-2-end {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        background-color: #afb5bd;
+      }
+
+      .col-span-2-start {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: #afb5bd;
+      }
+
+      .lunch {
+        border: 0px;
+        background-color: #edc126;
+        font-weight: bold;
+        font-size: larger;
+      }
+
+      .text-green {
+        background-color: #1faa59;
+        font-weight: bold;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>School Timetable</h1>
+    <div class="time-table">
+      <div class="row1">TIME</div>
+      <div class="row1">08:00 AM - 9:00 AM</div>
+      <div class="row1">09:00 AM - 10:00 AM</div>
+      <div class="row1">10:00 AM - 11:00 AM</div>
+      <div class="row1">11:00 AM - 12:00 AM</div>
+      <div class="row1">12:00 AM - 02:00 AM</div>
+      <div class="row1">02:00 AM - 03:00 AM</div>
+      <div class="row1">03:00 AM - 04:00 AM</div>
+
+      <div class="bold-text">Monday</div>
+      <div>English</div>
+      <div>Biology</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">L</div>
+      <div class="col-span-2-end">Chemistry LAB</div>
+
+      <div class="bold-text">Tuesday</div>
+      <div class="col-span-2-start">Biology</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">U</div>
+      <div>English</div>
+      <div>Biology</div>
+
+      <div class="bold-text">Wednesday</div>
+      <div>English</div>
+      <div>Biology</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">N</div>
+      <div class="col-span-2-end text-green">Games</div>
+
+      <div class="bold-text">Thurusday</div>
+      <div class="col-span-2-start">Biology LAB</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">C</div>
+      <div>English</div>
+      <div>Biology</div>
+
+      <div class="bold-text">Friday</div>
+      <div>English</div>
+      <div>Biology</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">H</div>
+      <div class="col-span-2-end">Physics LAB</div>
+
+      <div class="bold-text">Saturday</div>
+      <div class="col-span-2-start">Biology LAB</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">Break</div>
+      <div class="col-span-2-end text-green">LET OFF</div>
+    </div>
+  </body>
+</html>
