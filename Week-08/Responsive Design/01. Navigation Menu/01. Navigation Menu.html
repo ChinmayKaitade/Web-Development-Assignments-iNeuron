@@ -1,0 +1,123 @@
+<!-- 01. Let's assume you have been given a task to built a responsive webpage with a
+navigation menu that adapts to different screen sizes. Initially, on large
+screens, the webpage should have a horizontal menu that has several navigation
+items. It looks good on large screens, but on smaller screens, it should change
+into a menu icon (like a hamburger) and collapse. The below images will provide
+a clear picture of the task. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Menu</title>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        background-color: #242b2e;
+        height: 80px;
+        padding: 5px;
+      }
+
+      .large-screens {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        display: none;
+      }
+
+      .small-screens {
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .large-screens > img {
+        width: 60px;
+      }
+
+      .small-screens > img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 25px;
+      }
+
+      .large-screens button {
+        height: 40px;
+        width: 120px;
+        margin: 10px 0px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #0072e1;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      /* Hover Effect */
+      .nav-links a:hover {
+        color: #76b5d3;
+        scale: 1.1;
+      }
+
+      .large-screens button:hover {
+        scale: 1.1;
+        cursor: pointer;
+      }
+
+      @media screen and (min-width: 800px) {
+        .large-screens {
+          display: flex;
+        }
+        .small-screens {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <secttion class="nav-menu">
+      <!-- On Large Scrrens -->
+      <div class="large-screens">
+        <img src="Logo.png" alt="nav-logo" class="nav-logo" />
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+      </div>
+
+      <!-- On Small Screens -->
+      <div class="small-screens">
+        <img src="Logo.png" alt="nav-logo" class="nav-logo" />
+        <span class="material-symbols-outlined"> Menu </span>
+      </div>
+    </secttion>
+  </body>
+</html>

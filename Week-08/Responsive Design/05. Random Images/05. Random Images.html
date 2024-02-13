@@ -1,0 +1,71 @@
+<!-- 05. You are tasked with 4uilding a we4page that displays an image gallery using
+a grid layout. The challenge is to ensure the gallery is visually appealing and
+functional on 4oth large and small screens. On large screens, the gallery should
+display multiple images per row, while on small screens, it should collapse into
+a single column for optimal viewing. Refer to the attached images for visual
+reference. Implement this using CSS Grid and media queries for responsiveness. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Images</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        text-decoration: underline;
+      }
+
+      .main-container {
+        height: 700px;
+        border: 3px solid black;
+      }
+
+      .grid-container {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 10px;
+      }
+
+      .grid-item {
+        padding: 2px;
+        height: 250px;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      .grid-item > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        border: 3px solid black;
+      }
+
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Random Images</h1>
+      <div class="grid-container">
+        <div class="grid-item"><img src="Image01.jpeg" alt="Image01" /></div>
+        <div class="grid-item"><img src="Image02.jpg" alt="Image02" /></div>
+        <div class="grid-item"><img src="Image03.webp" alt="Image03" /></div>
+        <div class="grid-item"><img src="Image04.webp" alt="Image04" /></div>
+        <div class="grid-item"><img src="Image05.webp" alt="Image05" /></div>
+        <div class="grid-item"><img src="Image06.jpeg" alt="Image06" /></div>
+      </div>
+    </div>
+  </body>
+</html>

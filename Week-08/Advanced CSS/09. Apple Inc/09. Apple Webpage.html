@@ -1,0 +1,102 @@
+<!-- 09. In this coading challenege, our goal is to implement CSS Webkit and define
+CSS custom properties. The expected output, as shown in the provided image,
+demonstraters the usage of the same color in multiple places. To avoid
+repetation, we will define a custom color property at the top and utilize it
+throughout the webpage. Additionally, the content section will also incorporate
+a customized scrollbar by utilizing a CSS webkit to achieve the desired output. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Inc.</title>
+    <style>
+      :root {
+        --d-flex: flex;
+        --p-10: 10px;
+        --color-white: #fff;
+        --color-grey: #ffffff62;
+      }
+
+      .card {
+        width: 450px;
+        background: #242b2e;
+        display: var(--d-flex);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: var(--p-10);
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        border-radius: 20px;
+        border: 3px solid var(--color-white);
+        margin: auto;
+      }
+
+      img {
+        width: 210px;
+        height: 120px;
+      }
+
+      h1 {
+        color: var(--color-white);
+        font-size: 30px;
+        text-align: center;
+      }
+
+      p {
+        max-height: 200px;
+        overflow-y: scroll;
+        padding: var(--p-10);
+        color: var(--color-grey);
+      }
+
+      ::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--color-grey);
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card">
+      <img
+        src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo-1977.png"
+        alt="Logo"
+      />
+      <div class="main-content">
+        <h1>Apple Inc</h1>
+        <p>
+          Apple Inc., founded on April 1, 1976, by Steve Jobs, Steve Wozniak,
+          and Ronald Wayne, is a multinational technology company headquartered
+          in Cupertino, California. <br />
+          <br />
+
+          Apple is renowned for its innovative consumer electronics, software,
+          and online services, including the iPhone, iPad, Mac, Apple Watch, and
+          Apple TV. <br />
+          <br />
+
+          The company's success can be attributed to its commitment to sleek
+          design, intuitive user interfaces, and seamless integration between
+          hardware and software. <br />
+          <br />
+
+          Apple's ecosystem, centered around services like iCloud, iTunes, and
+          the App Store, has created a loyal customer base and fosters an
+          interconnected user experience across its products. <br />
+          <br />
+
+          Under the leadership of Steve Jobs, Apple revolutionized the
+          technology industry with groundbreaking products like the iPod,
+          iPhone, and iPad, setting new standards for smartphones, portable
+          music players, and tablets.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

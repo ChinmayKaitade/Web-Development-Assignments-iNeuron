@@ -1,0 +1,242 @@
+<!-- 03. In this coding challenge, your task is to create an information section for the
+previously built OneCard Webpage clone, focusing on the different modes like
+dark and light modes. The Webpage should look different depending on the screen
+size: dark mode for larger screens and light mode for smaller devices. The
+reference images are attached below. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Dark & Light Modes</title>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      nav {
+        height: 50px;
+        background-color: #242b2e;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .large-screens {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        display: none;
+      }
+
+      .small-screens {
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .large-screens > img {
+        width: 50px;
+      }
+
+      .small-screens > img {
+        width: 30px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 25px;
+      }
+
+      .nav-links a:hover {
+        color: #76b5d3;
+        scale: 1.1;
+      }
+
+      .large-screens button {
+        padding: 0px 40px;
+        margin: 10px 0px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #0072e1;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .large-screens button:hover {
+        scale: 1.1;
+        cursor: pointer;
+      }
+
+      .hero-section {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-section > video {
+        width: 90%;
+        border: 0;
+        outline: 0;
+      }
+
+      .hero-section > .text-section {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+      }
+
+      .text-section > h3 {
+        font-size: 30px;
+        margin-bottom: 0;
+      }
+
+      .text-section > h1 {
+        font-size: 60px;
+        margin-top: 5px;
+        color: #1893f7;
+        margin-bottom: 0;
+      }
+
+      .text-section > h4 {
+        font-size: 20px;
+        margin: 30px 0px;
+        color: #1893f7;
+      }
+
+      .sponsor-images img {
+        width: 60%;
+        margin-bottom: 20px;
+      }
+
+      .info-section {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0px;
+      }
+
+      .info-section h1 {
+        font-size: 30px;
+        color: #383cc1;
+        text-align: center;
+      }
+
+      .info-section p {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 10px;
+        font-weight: lighter;
+        text-align: center;
+      }
+
+      @media screen and (min-width: 800px) {
+        .large-screens {
+          display: flex;
+        }
+        .small-screens {
+          display: none;
+        }
+
+        .hero-section {
+          flex-direction: row;
+          align-items: start;
+          justify-content: space-between;
+        }
+
+        .hero-section > video {
+          width: 600px;
+          height: 600px;
+        }
+
+        .info-section {
+          background-color: #000;
+          color: #fff;
+        }
+
+        .info-section h1 {
+          font-size: 60px;
+        }
+
+        .info-section p {
+          font-size: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <section class="large-screens">
+        <img src="Logo.png" alt="Logo" />
+        <div class="nav-links">
+          <a href="#">Home</a><a href="#">Blog</a><a href="#">About</a
+          ><a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+      </section>
+
+      <section class="small-screens">
+        <img
+          src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+          alt="Logo"
+        />
+
+        <div>
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+      </section>
+    </nav>
+
+    <main class="hero-section">
+      <div class="text-section">
+        <h3>Say Hi To</h3>
+        <h1>One Card</h1>
+        <h4>Co-branded Card Issuers :</h4>
+        <div class="sponsor-images">
+          <img src="Banking_partners.png" alt="sponsor1" />
+        </div>
+        <p>
+          India's best metal credit card. Built with full-stack tech. Backed by
+          the principles of simplicity, transparency, and giving back control to
+          the user.
+        </p>
+      </div>
+      <video loop autoplay controls src="say_hi_2x_d3_.mp4"></video>
+    </main>
+
+    <section class="info-section">
+      <h1>No Hidden Fees Ever</h1>
+      <p>No Joining Fees.</p>
+      <p>No Annual Fees.</p>
+      <p>No Rewards Redemption Fees.</p>
+    </section>
+  </body>
+</html>

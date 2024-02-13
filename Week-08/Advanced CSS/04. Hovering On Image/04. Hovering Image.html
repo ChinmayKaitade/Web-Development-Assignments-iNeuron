@@ -1,0 +1,38 @@
+<!-- 04. Let's now try to implement the CSS transform and trasnsition property. In
+coding challenge , you are expected to create a simple webpage with an image as
+shown in the reference image below. Note that website reponsiveness is optional.
+On hovering the image must be zoomed slowly. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hovering On Image</title>
+    <style>
+      .main-img {
+        overflow: hidden;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        height: 400px;
+        width: 600px;
+        border: 4px solid #000;
+        transition: 1s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-img">
+      <img src="Image01.webp" alt="Image" />
+    </section>
+  </body>
+</html>

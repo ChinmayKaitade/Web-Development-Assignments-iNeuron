@@ -1,0 +1,170 @@
+<!-- 06. You have reached the final task of learning responsive web design, which in"ol"es designing a responsive 
+footer. Your goal is to build a simple webpage footer that matches the design shown in the attached image. 
+The footer should adapt to different screen sizes, ensuring optimal visibility and alignment of the content. 
+Refer to the attached image for a visual reference. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-end;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      footer {
+        background-color: #121315;
+        color: #a7a7a7;
+        font-size: 16px;
+        padding: 50px 0px;
+      }
+      footer * {
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+      }
+      .row {
+        padding: 1em 1em;
+      }
+      .row.primary {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        align-items: stretch;
+      }
+      .column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 40px;
+        min-height: 55px;
+      }
+      h3 {
+        width: 100%;
+        text-align: left;
+        color: white;
+        font-size: 1.4em;
+        white-space: nowrap;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+      }
+      li:not(:first-child) {
+        margin-top: 30px;
+      }
+      ul li a {
+        color: #a7a7a7;
+        text-decoration: none;
+      }
+      ul li a:hover {
+        color: #2a8ded;
+      }
+      .about p {
+        text-align: justify;
+        line-height: 2;
+        margin: 0;
+      }
+      input,
+      button {
+        font-size: 14px;
+        padding: 18px;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+      button {
+        background-color: #1893f7;
+        color: #ffffff;
+      }
+
+      .copyright {
+        padding: 10px 20px;
+        background-color: #25262e;
+      }
+      .footer-menu {
+        float: left;
+        margin-top: 10px;
+      }
+
+      .footer-menu a {
+        color: #cfd2d6;
+        padding: 6px;
+
+        text-decoration: none;
+      }
+      .footer-menu a:hover {
+        color: #27bcda;
+      }
+      @media screen and (max-width: 850px) {
+        .row.primary {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+          <h3>One Card</h3>
+          <p>
+            India's best metal credit card. Built with full-stack tech. Backed
+            by the principles of simplicity, transparency, and giving back
+            control to the user.
+          </p>
+        </div>
+        <div class="column links">
+          <h3>Navigation</h3>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Offers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column links">
+          <h3>Support</h3>
+          <ul>
+            <li>
+              <a href="#">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column subscribe">
+          <h3>Newsletter</h3>
+          <div>
+            <input type="email" placeholder="Your email id here" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!-- 02. Imagine you are a web developer working for a creative agency that
+specializes in building visually appealing and interactive websites. The agency
+has recently received a client request to create a landing page similar to the
+design of the one-page website: https://www.getonecard.app/. The client wants to
+showcase a video prominently on the page to engage visitors. Your task is to
+create a simple webpage that replicates the one-page landing page design,
+including a responsive layout and an HTML video. The below images are for your
+reference. Some browsers don't allow you to play videos without the controls
+attribute. So, you can add controls here, we will learn how to play a video
+without the controls attribute in the later sections. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        background-color: #242b2e;
+        height: 80px;
+        padding: 5px;
+      }
+
+      .large-screens {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        display: none;
+      }
+
+      .small-screens {
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .large-screens > img {
+        width: 60px;
+      }
+
+      .small-screens > img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 25px;
+      }
+
+      .large-screens button {
+        height: 40px;
+        width: 120px;
+        margin: 10px 0px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #0072e1;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      /* Hover Effect */
+      .nav-links a:hover {
+        color: #76b5d3;
+        scale: 1.1;
+      }
+
+      .large-screens button:hover {
+        scale: 1.1;
+        cursor: pointer;
+      }
+
+      /* Hero Section Styling Start */
+      .hero-section {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-section > video {
+        width: 90%;
+        border: 0;
+        outline: 0;
+      }
+
+      .hero-section > .left-section {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+      }
+
+      .left-section > h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+      }
+
+      .left-section > h1 {
+        font-size: 60px;
+        margin-top: 5px;
+        color: #1893f7;
+        margin-bottom: 0;
+      }
+
+      .left-section > h3 {
+        font-size: 20px;
+        margin: 30px 0px;
+        color: #1893f7;
+      }
+
+      .images-section img {
+        width: 60%;
+        margin-bottom: 20px;
+      }
+
+      @media screen and (min-width: 800px) {
+        .large-screens {
+          display: flex;
+        }
+        .small-screens {
+          display: none;
+        }
+
+        .hero-section {
+          flex-direction: row;
+          align-items: start;
+          justify-content: space-between;
+        }
+
+        .right-section > video {
+          width: 600px;
+          height: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <secttion class="nav-menu">
+      <!-- On Large Scrrens -->
+      <div class="large-screens">
+        <img src="Logo.png" alt="nav-logo" class="nav-logo" />
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+      </div>
+
+      <!-- On Small Screens -->
+      <div class="small-screens">
+        <img src="Logo.png" alt="nav-logo" class="nav-logo" />
+        <span class="material-symbols-outlined"> Menu </span>
+      </div>
+    </secttion>
+
+    <!-- Hero Section Starts -->
+    <section class="hero-section">
+      <!-- Left Side section Starts -->
+      <div class="left-section">
+        <h2>Say Hi To</h2>
+        <h1>One Card</h1>
+        <h3>Co-branded Card Issuers :</h3>
+        <div class="images-section">
+          <img src="Banking_partners.png" alt="banking-partners" />
+        </div>
+        <p>
+          India's best metal credit card. Built with full-stack tech. Backed by
+          the principles of simplicity, transparency, and giving back control to
+          the user.
+        </p>
+      </div>
+      <!-- Right Side section Starts -->
+      <div class="right-section">
+        <video loop autoplay="autoplay" controls>
+          <source src="say_hi_2x_d3_.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+  </body>
+</html>

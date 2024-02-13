@@ -1,0 +1,82 @@
+<!-- 03. Transforming an element by an angle using CSS transform is important as it
+allows for the creation of visually dynamic and engaging web designs by rotating
+elements. In this coding challenge lets create a sticky note and on hovering the
+sticky note, it should transform by rotating 90 degrees anti-clockwise. These
+types of transformations are usually implemented on the landing pages. Below are
+the images for reference -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes Transform</title>
+    <style>
+      .card {
+        width: 300px;
+        margin: 200px auto;
+        background: linear-gradient(
+          90deg,
+          rgba(69, 164, 221, 1) 11%,
+          rgba(51, 78, 194, 1) 100%,
+          rgba(233, 177, 140, 1) 100%
+        );
+        padding: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s ease-in;
+      }
+
+      .card:hover {
+        transform: rotate(-45deg);
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+      }
+
+      .header h1 {
+        color: #000000;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px 0px;
+        border-radius: 5px;
+        border: 0;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          rgba(69, 221, 219, 1) 11%,
+          rgba(51, 194, 91, 1) 100%,
+          rgba(233, 177, 140, 1) 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <h1>#01</h1>
+        <p>Created On : 01/01/2023</p>
+      </div>
+
+      <div class="info">
+        <h2>Important dates</h2>
+        <ul>
+          <li>January 26 - Republic Day</li>
+          <li>August 15 - Independance Day</li>
+          <li>October 2 - Gandhi Jayanti</li>
+          <li>August 29 - National Sports Day</li>
+        </ul>
+      </div>
+
+      <button>Mark as Done</button>
+    </div>
+  </body>
+</html>

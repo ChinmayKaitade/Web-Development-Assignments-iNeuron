@@ -1,0 +1,88 @@
+<!-- 02. Color gradients are often used for primary containers in webpages, such as
+the background of some sections. In this coding challenge let3s try to implement
+an analytics section of a webpage as shown in the below image. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics Section</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      .main {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
+        padding: 30px;
+        margin-top: 15px;
+        background: linear-gradient(
+          90deg,
+          rgb(203, 95, 231) 15%,
+          rgba(149, 59, 213, 1) 100%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        border-radius: 20px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+        font-size: 40px;
+        font-style: italic;
+      }
+
+      p {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <section>
+        <h1>15+</h1>
+        <p>Years Experience</p>
+      </section>
+
+      <section>
+        <h1>24.5 T+</h1>
+        <p>Invested on Coinyx</p>
+      </section>
+
+      <section>
+        <h1>115+</h1>
+        <p>Professional Team</p>
+      </section>
+
+      <section>
+        <h1>262+</h1>
+        <p>Total Global Node</p>
+      </section>
+    </div>
+  </body>
+</html>
