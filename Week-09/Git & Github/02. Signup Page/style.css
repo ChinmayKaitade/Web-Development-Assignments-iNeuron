@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+input,
+label {
+  color: black;
+}
+.user-box {
+  margin-bottom: 20px;
+}
+
+.user-box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.user-box select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.user-box input[type="submit"] {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.user-box input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}

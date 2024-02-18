@@ -1,0 +1,53 @@
+<!-- 02. Design and develop a SignUp page using HTML and CSS. The login page should
+have a visually appealing layout as shown in the below image. 
+Note: Publish this your code to github & Submit the link -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="signup-box">
+        <h1>Signup</h1>
+        <form>
+          <div class="user-box">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="user-box">
+            <label for="batch">Batch:</label>
+            <select name="batch" id="batch">
+              <option value="sigma1">Sigma 1.0</option>
+              <option value="sigma2">Sigma 2.0</option>
+            </select>
+          </div>
+
+          <div class="user-box">
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" />
+          </div>
+
+          <div class="user-box">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="user-box">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" />
+          </div>
+
+          <div class="user-box">
+            <input type="submit" value="Signup" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
