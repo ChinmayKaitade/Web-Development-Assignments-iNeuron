@@ -1,0 +1,77 @@
+<!-- 02. Building upon the previous assignment, you now have to create a hero section for the landing
+page. This section should be eye-catching and grab the visitors' attention. Take a look at the image
+below for reference. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <!-- Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Icons -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <!-- Main Container Starts Here -->
+    <div class="max-w-[1500px] w-[100%] m-auto">
+        <!-- Navigation Bar Starts Here -->
+        <nav class="flex align-center bg-[#212224] py-5 justify-between">
+            <div class="nav-img flex align-center">
+                <img class="mx-5 w-32" src="https://www.indonez.com/html-demo/liquid/img/user/header-logo-6ohuZh.svg"
+                    alt="Logo">
+            </div>
+
+            <div class="nav-items flex">
+                <button
+                    class="px-5 py-2 text-sm mx-3 bg-[#fc5b3f] rounded-md font-bold text-white hidden md:block">CREATE
+                    ACCOUNT</button>
+                <img class="inline-block h-10 w-10 rounded-full mx-3 hidden md:block"
+                    src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png" alt="user-avatar">
+                <span>
+                    <a class="w-5 mr-5 md:hidden" href="#">&#8801;</a>
+                </span>
+            </div>
+        </nav>
+        <!-- Navigation Bar Ends Here -->
+
+        <!-- Hero Section Starts Here -->
+        <div class="flex flex-col md:flex-row gap-5 justify-between align-center bg-[#212224] px-2 md:px-20 md:py-20">
+            <!-- Left Section Starts Here -->
+            <div class="flex flex-col justify-center w-[100%] md:w-[50%] py-5">
+                <h1 class="text-5xl md:text-7xl text-white font-semibold py-3">
+                    Multi-regulated <br>
+                    global broker.
+                </h1>
+                <p class="text-gray-400 text-md md:text-2xl md:pr-5 my-5">
+                    A trusted destination for traders worldwide, Authorised by FCA, ASIC
+                    & FSCA
+                </p>
+                <button class="text-white border-2 md:w-[40%] py-3 mt-5 font-semibold border-[#fc5b3f] rounded-md">
+                    DISCOVER ACCOUNTS
+                </button>
+            </div>
+            <!-- Left Section Ends Here -->
+
+            <!-- Right Section Starts Here -->
+            <div class="md:w-[50%] flex justify-center px-5">
+                <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-slide-2.svg" alt="Hero Image"
+                    class="w-[100%]">
+            </div>
+            <!-- Right Section Ends Here -->
+        </div>
+        <!-- Hero Section Ends Here -->
+    </div>
+    <!-- Main Container Ends Here -->
+</body>
+
+</html>

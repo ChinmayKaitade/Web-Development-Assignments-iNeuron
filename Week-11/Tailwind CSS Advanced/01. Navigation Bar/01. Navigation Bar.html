@@ -1,0 +1,55 @@
+<!-- 01. Let’s say we need to design a website for a stock market broker website. You are tasked with
+creating a landing page for a stock market broker website. Your team lead has assigned you the
+initial responsibility of designing a straightforward navigation bar. Note that there should be no
+custom CSS and the output must be achieved only using Tailwind CSS. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <!-- Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Icons -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <!-- Main Container Starts Here -->
+    <div class="max-w-[1500px] w-[100%] m-auto">
+        <!-- Navigation Bar Starts Here -->
+        <nav class="flex align-center bg-[#212224] py-5 justify-between">
+            <!-- Left Side Section Start -->
+            <div class="nav-img flex align-center">
+                <img class="mx-5 w-32" src="https://www.indonez.com/html-demo/liquid/img/user/header-logo-6ohuZh.svg"
+                    alt="Logo">
+            </div>
+            <!-- Left Side Section End -->
+
+            <!-- Right Side Section Start -->
+            <div class="nav-items flex">
+                <button class="px-5 py-2 text-sm mx-3 bg-[#fc5b3f] rounded-md font-bold text-white hidden md:block">
+                    CREATE ACCOUNT
+                </button>
+                <img class="inline-block h-10 w-10 rounded-full mx-3 hidden md:block"
+                    src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png" alt="user-avatar">
+            </div>
+            <span class="material-symbols-outlined w-5 mr-5 md:hidden text-white">
+                <a class="font-bold w-32" href="#">&#8801;</a>
+            </span>
+            <!-- Right Side Section End -->
+        </nav>
+        <!-- Navigation Bar Ends Here -->
+    </div>
+    <!-- Main Container Ends Here -->
+</body>
+
+</html>

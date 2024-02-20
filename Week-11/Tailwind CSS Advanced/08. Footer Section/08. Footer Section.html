@@ -1,0 +1,418 @@
+<!-- 08. Moving forward with our previous assignment, we now have a coding challenge to design the final
+component of the landing page, which is the footer section. Below are some reference images to guide us. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Section</title>
+    <!-- Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Icons -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <!-- Main Container Starts Here -->
+    <div class="max-w-[1500px] w-[100%] m-auto">
+        <!-- Navigation Bar Starts Here -->
+        <nav class="flex align-center bg-[#212224] py-5 justify-between">
+            <div class="nav-img flex align-center">
+                <img class="mx-5 w-32" src="https://www.indonez.com/html-demo/liquid/img/user/header-logo-6ohuZh.svg"
+                    alt="Logo">
+            </div>
+
+            <div class="nav-items flex">
+                <button
+                    class="px-5 py-2 text-sm mx-3 bg-[#fc5b3f] rounded-md font-bold text-white hidden md:block">CREATE
+                    ACCOUNT</button>
+                <img class="inline-block h-10 w-10 rounded-full mx-3 hidden md:block"
+                    src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png" alt="user-avatar">
+                <span>
+                    <a class="w-5 mr-5 md:hidden" href="#">&#8801;</a>
+                </span>
+            </div>
+        </nav>
+        <!-- Navigation Bar Ends Here -->
+
+        <!-- Hero Section Starts Here -->
+        <div class="flex flex-col md:flex-row gap-5 justify-between align-center bg-[#212224] px-2 md:px-20 md:py-20">
+            <!-- Left Section Starts Here -->
+            <div class="flex flex-col justify-center w-[100%] md:w-[50%] py-5">
+                <h1 class="text-5xl md:text-7xl text-white font-semibold py-3">
+                    Multi-regulated <br>
+                    global broker.
+                </h1>
+                <p class="text-gray-400 text-md md:text-2xl md:pr-5 my-5">
+                    A trusted destination for traders worldwide, Authorised by FCA, ASIC
+                    & FSCA
+                </p>
+                <button class="text-white border-2 md:w-[40%] py-3 mt-5 font-semibold border-[#fc5b3f] rounded-md">
+                    DISCOVER ACCOUNTS
+                </button>
+            </div>
+            <!-- Left Section Ends Here -->
+
+            <!-- Right Section Starts Here -->
+            <div class="md:w-[50%] flex justify-center px-5">
+                <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-slide-2.svg" alt="Hero Image"
+                    class="w-[100%]">
+            </div>
+            <!-- Right Section Ends Here -->
+        </div>
+        <!-- Hero Section Ends Here -->
+
+        <!-- Companies Section Starts Here -->
+        <div class="flex flex-col md:flex-row w-[100%] md:justify-around gap-2 bg-[#212224] py-10">
+            <div class="flex gap-2 justify-center py-3 w-[100%]">
+                <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-1.svg" alt="Alphabet">
+                <h1 class="bg-green-400 p-1 px-3 rounded-md font-bold mx-2">^ 1,740.05</h1>
+            </div>
+
+            <div class="flex gap-2 justify-center py-3 w-[100%]">
+                <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-2.svg" alt="Microsoft">
+                <h1 class="bg-green-400 p-1 px-3 rounded-md font-bold mx-2">^ 1,740.05</h1>
+            </div>
+
+            <div class="flex gap-2 justify-center py-3 w-[100%]">
+                <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-3.svg" alt=" Facebook">
+                <h1 class="bg-red-400 p-1 px-3 rounded-md font-bold mx-2">^ 1,740.05</h1>
+            </div>
+
+            <div class="flex gap-2 justify-center py-3 w-[100%]">
+                <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-4.svg" alt="Amazon">
+                <h1 class="bg-green-400 p-1 px-3 rounded-md font-bold mx-2">^ 1,740.05</h1>
+            </div>
+
+            <div class="flex gap-2 justify-center py-3 w-[100%]">
+                <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-5.svg" alt="Tesla">
+                <h1 class="bg-red-400 p-1 px-3 rounded-md font-bold mx-2">^ 1,740.05</h1>
+            </div>
+        </div>
+        <!-- Companies Section Endss Here -->
+
+        <!-- Cards Section Starts Here -->
+        <div class="md:p-10 p-3 bg-[#101112]">
+            <!-- Heading For Cards -->
+            <div class="flex justify-between align-center text-white py-3 md:py-10">
+                <h1 class="md:text-4xl font-semibold">Save time. Get <span class="text-[#fc5b3f]">higher return.</span>
+                    <br>
+                    Multiply wealth.
+                </h1>
+                <button class="border-2 rounded-md text-xs md:text-md p-3 md:px-6 md:my-4 border-[#fc5b3f]">
+                    FIND OUT MORE ></button>
+            </div>
+
+            <!-- Cards Sections -->
+            <div class="text-white md:p-5 md:grid grid-cols-3 gap-10">
+                <!-- Card-1 -->
+                <div class="card bg-[#212224] pb-[450px] relative overflow-hidden rounded-lg my-3">
+                    <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-object-1.svg" alt="Image01"
+                        class="absolute right-0 top-0 -mt-16 -mr-16 w-[100%]" />
+
+                    <div class="p-5 absolute bottom-0 px-10">
+                        <h1 class="text-2xl md:text-4xl my-5 font-semibold">
+                            Various assets
+                        </h1>
+                        <p class="md:text-xl text-gray-400">
+                            Duis aute irure dolor in reprehen derit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card-2 -->
+                <div class="card bg-[#212224] pb-[450px] relative overflow-hidden rounded-lg my-3">
+                    <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-object-2.svg" alt="Image02"
+                        class="absolute right-0 top-0 -mt-16 -mr-16 w-[100%]" />
+
+                    <div class="p-5 absolute bottom-0 px-10">
+                        <h1 class="text-2xl md:text-4xl my-5 font-semibold">
+                            Market analysis
+                        </h1>
+                        <p class="md:text-xl text-gray-400">
+                            Duis aute irure dolor in reprehen derit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card-3 -->
+                <div class="card bg-[#212224] pb-[450px] relative overflow-hidden rounded-lg my-3">
+                    <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-object-3.svg" alt="Image03"
+                        class="absolute right-0 top-0 -mt-16 -mr-16 w-[100%]" />
+
+                    <div class="p-5 absolute bottom-0 px-10">
+                        <h1 class="text-2xl md:text-4xl my-5 font-semibold">
+                            Enhanced tools
+                        </h1>
+                        <p class="md:text-xl text-gray-400">
+                            Duis aute irure dolor in reprehen derit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cards Section Starts Here -->
+
+        <!-- Features Section Starts Here -->
+        <section class="md:p-10 p-3 md:grid grid-rows-2 grid-cols-2 gap-16">
+            <div class="flex gap-5 my-5">
+                <div>
+                    <img class="w-20 h-20" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-1.svg"
+                        alt="feature-1">
+                </div>
+                <div>
+                    <h1 class="font-semibold text-xl md:text-3xl">
+                        Expert service
+                    </h1>
+                    <p class="text-xxs md:text-xl py-3 text-gray-500">
+                        Quis autem vel eum iure reprehenderit qui in voluptate velit esse
+                        quam nihil molestiae consequatur.
+                    </p>
+                    <button class="text-gray-400 text-xs md:text-lg">
+                        LEARN MORE -->
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex gap-5 my-5">
+                <div>
+                    <img class="w-20 h-20" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-2.svg"
+                        alt="feature-2">
+                </div>
+                <div>
+                    <h1 class="font-semibold text-xl md:text-3xl">
+                        Fully regulated
+                    </h1>
+                    <p class="text-xxs md:text-xl py-3 text-gray-500">Quis autem vel eum iure reprehenderit qui in
+                        voluptate velit esse
+                        quam nihil molestiae consequatur.
+                    </p>
+                    <button class="text-gray-400 text-xs md:text-lg">
+                        LEARN MORE -->
+                    </button>
+                </div>
+            </div>
+
+            <div class="feature-3">
+                <div>
+                    <img class="w-20 h-20" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-3.svg"
+                        alt="feature-3">
+                </div>
+                <div>
+                    <h1 class="font-semibold text-xl md:text-3xl">
+                        Financial strength
+                    </h1>
+                    <p class="text-xxs md:text-xl py-3 text-gray-500">Quis autem vel eum iure reprehenderit qui in
+                        voluptate velit esse
+                        quam nihil molestiae consequatur.
+                    </p>
+                    <button class="text-gray-400 text-xs md:text-lg">
+                        LEARN MORE -->
+                    </button>
+                </div>
+            </div>
+
+            <div class="feature-4">
+                <div>
+                    <img class="w-20 h-20" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-4.svg"
+                        alt="feature-4">
+                </div>
+                <div>
+                    <h1 class="font-semibold text-xl md:text-3xl">
+                        Integrated support
+                    </h1>
+                    <p class="text-xxs md:text-xl py-3 text-gray-500">Quis autem vel eum iure reprehenderit qui in
+                        voluptate velit esse
+                        quam nihil molestiae consequatur.
+                    </p>
+                    <button class="text-gray-400 text-xs md:text-lg">
+                        LEARN MORE -->
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Features Section Ends Here -->
+
+        <!-- Registration Process Section Starts Here -->
+        <section class="mb-20 mx-2 md:mx-32 border-2 border-[#FC5B3F] rounded-lg">
+            <div class="flex justify-center">
+                <h1 class="text-2xl font-bold inline relative -top-5 bg-white px-5 text-[#FC5B3F]">
+                    Simple steps to start trade.
+                </h1>
+            </div>
+            <section class="grid md:grid-cols-3 justify-center gap-5 my-5">
+                <div class="flex flex-col items-center">
+                    <div
+                        class="h-14 w-14 rounded-full text-[#FC5B3F] border-2 border-[#FC5B3F] font-bold text-xl flex justify-center items-center">
+                        1
+                    </div>
+                    <h1 class="mt-3 text-xl text-gray-500">Register account</h1>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div
+                        class="h-14 w-14 rounded-full text-[#FC5B3F] border-2 border-[#FC5B3F] font-bold text-xl flex justify-center items-center">
+                        2
+                    </div>
+                    <h1 class="mt-3 text-xl text-gray-500">Fund your account</h1>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div
+                        class="h-14 w-14 rounded-full text-[#FC5B3F] border-2 border-[#FC5B3F] font-bold text-xl flex justify-center items-center">
+                        3
+                    </div>
+                    <h1 class="mt-3 text-xl text-gray-500">Start your trade</h1>
+                </div>
+            </section>
+        </section>
+        <!-- Registration Process Section Ends Here -->
+
+        <!-- News Section Starts Here -->
+        <section class="mx-5">
+            <h1 class="text-5xl font-bold text-gray-800 py-8 mb-10">
+                Stay ahead of the curve.
+            </h1>
+            <div class="grid md:grid-cols-3 mb-10 gap-5">
+                <div class="border-l-2 border-[#FC5B3F] px-10 relative">
+                    <h1 class="absolute -left-12 text-xl rotate-90 font-semibold bg-white px-5 text-[#FC5B3F]">News</h1>
+                    <h1 class="text-3xl font-semibold mb-5">
+                        Wall Street cautious on 'frothy' stocks, warn bitcoin bubble
+                    </h1>
+                    <p class="text-xl">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit ...</p>
+                    <p class="my-5 text-xl font-bold">Read More -></p>
+                </div>
+
+                <div class="border-l-2 border-[#FC5B3F] px-10 relative">
+                    <h1 class="absolute -left-12 text-xl rotate-90 font-semibold bg-white px-5 text-[#FC5B3F]">News</h1>
+                    <h1 class="text-3xl font-semibold mb-5">Will AUD/USD Hit 0.8000 In The Foreseeable Future?</h1>
+                    <p class="text-xl">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit ...</p>
+                    <p class="my-5 text-xl font-bold">Read More -></p>
+                </div>
+
+                <div class="border-l-2 border-[#FC5B3F] px-10 relative">
+                    <h1 class="absolute -left-12 text-xl rotate-90 font-semibold bg-white px-5 text-[#FC5B3F]">News</h1>
+                    <h1 class="text-3xl font-semibold mb-5">How Can You Use Volatility to Your Advantage</h1>
+                    <p class="text-xl">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit ...</p>
+                    <p class="my-5 text-xl font-bold">Read More -></p>
+                </div>
+            </div>
+        </section>
+        <!-- News Section Ends Here -->
+
+        <!-- Footer Section Starts Here -->
+        <footer class="relative overflow-hidden py-10 bg-[#212224]">
+            <div class="relative z-10 mx-auto max-w-7xl px-4">
+                <div class="-m-6 flex flex-wrap">
+                    <div class="w-full p-6 md:w-1/2 lg:w-5/12">
+                        <!-- Footer Logo Section -->
+                        <div class="flex h-full flex-col justify-between">
+                            <div class="mb-4 inline-flex items-center">
+                                <img src="https://www.indonez.com/html-demo/liquid/img/user/header-logo-6ohuZh.svg"
+                                    alt="Logo" />
+                            </div>
+                        </div>
+                        <!-- Footer Links Section -->
+                        <div class="w-full p-6 md:w-1/2 lg:w-2/12">
+                            <div class="h-full">
+                                <h3 class="tracking-px mb-9 text-xl font-semibold uppercase text-white">
+                                    Markets
+                                </h3>
+                                <ul>
+                                    <li class="mb-4">
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            Web Platform
+                                        </a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            Trading Apps
+                                        </a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            Meta Trader 5
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            Compare Features
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="w-full p-6 md:w-1/2 lg:w-2/12">
+                            <div class="h-full">
+                                <h3 class="tracking-px mb-9 text-xl font-semibold uppercase text-white">
+                                    Account Types
+                                </h3>
+                                <ul>
+                                    <li class="mb-4">
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            Demo account
+                                        </a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            Standard account
+                                        </a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            ECN account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            Islamic account
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="w-full p-6 md:w-1/2 lg:w-3/12">
+                            <div class="h-full">
+                                <h3 class="tracking-px mb-9 text-xl font-semibold uppercase text-white">
+                                    Learn to Trade
+                                </h3>
+                                <ul>
+                                    <li class="mb-4">
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            News and trade ideas
+                                        </a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            Trading strategy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base font-medium text-gray-500" href="#">
+                                            Forex trading course
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </footer>
+        <!-- Footer Section Ends Here -->
+    </div>
+    <!-- Main Container Ends Here -->
+</body>
+
+</html>
