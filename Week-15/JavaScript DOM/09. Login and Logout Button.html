@@ -1,0 +1,40 @@
+<!-- 09. Your task is to create a simple webpage with two buttons: "Login" and "Logout." 
+When the "Login" button is clicked, the user's authentication status should be stored
+in localStorage.When the "Logout" button is clicked, the authentication status should 
+be removed from localStorage. Additionally, display a heading below the buttons to 
+indicate whether the user is logged in or not. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Logout Button</title>
+  </head>
+  <body>
+    <button onclick="login()">Login</button>
+
+    <button onclick="logout()">Logout</button>
+
+    <h1 id="login-status"></h1>
+
+    <!-- Script Start Here -->
+    <script>
+      function login() {
+        localStorage.setItem("auth", true);
+        window.location.reload();
+      }
+      function logout() {
+        localStorage.setItem("auth", false);
+        window.location.reload();
+      }
+      const heading = document.getElementById("login-status");
+      const loginStatus = localStorage.getItem("auth");
+      if (loginStatus != "false") {
+        heading.innerHTML = "User is logged In";
+      } else {
+        heading.innerHTML = "User Has Not logged In";
+      }
+    </script>
+  </body>
+</html>

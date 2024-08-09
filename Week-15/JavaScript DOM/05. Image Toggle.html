@@ -1,0 +1,44 @@
+<!-- 05. Your task is to implement an image toggle using JS DOM. Create a heading to display
+the current state of the image and a toggle button. When the button is clicked, if the 
+image is hidden, make it visible, and update the message accordingly. If the image is 
+visible, hide it, and update the message accordingly. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Toggle Using JS DOM</title>
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+
+    <button style="margin-bottom: 10px" onclick="toggleImage()">
+      Toggle Image
+    </button>
+
+    <div>
+      <img
+        src="https://learn.pwskills.com/_next/image?url=https%3A%2F%2Fcdn.pwskills.com%2Fassets%2Fuploads%2Fthumbnails%2F642152e5af09d60df056811a.png&w=1920&q=75"
+        alt="Course Image"
+        id="img"
+      />
+    </div>
+
+    <!-- Script Start Here -->
+    <script>
+      const heading = document.getElementById("heading");
+      heading.innerText = "Your Image is visible.";
+      function toggleImage() {
+        const image = document.getElementById("img");
+        if (image.style.opacity == 0) {
+          image.style.opacity = 100;
+          heading.innerText = "Your Image is visible.";
+        } else {
+          image.style.opacity = 0;
+          heading.innerText = "Your Image is hidden.";
+        }
+      }
+    </script>
+  </body>
+</html>

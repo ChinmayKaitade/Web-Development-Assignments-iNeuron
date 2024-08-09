@@ -1,0 +1,44 @@
+<!-- 07. You are tasked to create an input field and a list of items. As the user types
+in the input field, dynamically filter the list to show only items that match the 
+input. Making sure the list updates in real-time as the user types. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input field and list of items</title>
+  </head>
+  <body>
+    <input type="text" id="filterInput" placeholder="Search for items" />
+    <h3>Results:</h3>
+    <ul id="itemList">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Tailwind CSS</li>
+      <li>GitHub</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <!-- Script Start Here -->
+    <script>
+      const filterInput = document.getElementById("filterInput");
+      const itemList = document
+        .getElementById("itemList")
+        .getElementsByTagName("li");
+
+      filterInput.addEventListener("input", function () {
+        const filterValue = filterInput.value.toLowerCase();
+
+        for (let i = 0; i < itemList.length; i++) {
+          const itemText = itemList[i].innerText.toLowerCase();
+          if (itemText.includes(filterValue)) {
+            itemList[i].style.display = "block";
+          } else {
+            itemList[i].style.display = "none";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!-- 04. You are tasked to create form validation using JS DOM. Ensure that the username
+must be at least 3 characters long, and the password must be at least 8 characters 
+long. On form submission, display an alert stating "Form Validation successful"if 
+the conditions are met, otherwise, show "Form Validation failed." Remember, on form 
+submission, the webpage must not be reloaded. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation Using DOM</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      div {
+        margin: 10px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="validateAndSubmit(event)">
+      <h1>Sign Up Form</h1>
+
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          placeholder="(Minimum 3 characters)"
+          name="name"
+          id="name"
+        />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          placeholder="(Enter Your Email)"
+          name="email"
+          id="email"
+        />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          placeholder="(Minimum 8 characters)"
+          name="password"
+          id="password"
+        />
+      </div>
+
+      <button type="submit" id="submit">Submit</button>
+
+      <!-- Script Start Here -->
+      <script>
+        function validateAndSubmit(event) {
+          event.preventDefault();
+          console.log("Entered");
+          const name = document.getElementById("name");
+          const email = document.getElementById("email");
+          const password = document.getElementById("password");
+
+          if (name.value.length >= 3 && password.value.length >= 8) {
+            alert("Form Validation Successfull !!");
+          } else {
+            alert("Form Validation Failed !!");
+          }
+        }
+      </script>
+    </form>
+  </body>
+</html>

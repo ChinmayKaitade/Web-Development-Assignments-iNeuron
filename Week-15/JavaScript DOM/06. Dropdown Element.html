@@ -1,0 +1,43 @@
+<!-- 06. Your task is to use JS DOM to create a heading element and a dropdown element.
+You have an array of options, and you need to loop through them, adding each option
+as a dropdown item. Below are the reference images. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Element</title>
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <!-- Script Start Here -->
+    <script>
+      const options = ["JavaScript", "Java", "Python", "C++"];
+
+      const container = document.querySelector(".container");
+
+      const heading = document.createElement("h3");
+      heading.innerText = "Which is favorite Programming Language : ";
+
+      const span = document.createElement("span");
+
+      const select = document.createElement("select");
+
+      options.map((data) => {
+        const option = document.createElement("option");
+        option.innerText = data;
+        option.value = data;
+
+        select.appendChild(option);
+      });
+
+      span.appendChild(select);
+
+      heading.appendChild(span);
+
+      container.appendChild(heading);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!-- 08. Your task is to create a webpage that displays the time in hours, minutes, and 
+seconds in the center of the screen. Format the time to have 2 digits for hours, 
+minutes, and seconds, and use the time's values to assign a hex code to the background.
+The timer should update in real-time without any user interaction. For Example: If the
+time is 12:10:50 the background color of the webpage will have the hex code “#121050”. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Clock</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+        font-size: 3rem;
+      }
+
+      .timer {
+        padding: 20px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timer" id="timer">
+      <span id="hours">00</span> : <span id="minutes">00</span> :
+      <span id="seconds">00</span>
+    </div>
+
+    <!-- Script Start Here -->
+    <script>
+      function updateTimer() {
+        const currentTime = new Date();
+        const hours = currentTime.getHours().toString().padStart(2, "0");
+        const minutes = currentTime.getMinutes().toString().padStart(2, "0");
+        const seconds = currentTime.getSeconds().toString().padStart(2, "0");
+        const hexCode = `#${hours}${minutes}${seconds}`;
+
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        document.body.style.backgroundColor = hexCode;
+      }
+
+      setInterval(updateTimer, 1000);
+    </script>
+  </body>
+</html>
