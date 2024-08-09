@@ -1,0 +1,111 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.start-button-container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#start-quiz-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/* Style the quiz container */
+.quiz-container {
+  display: none;
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid darkgrey;
+}
+
+/* Style the quiz header */
+.quiz-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Style the quiz name */
+.quiz-header h1 {
+  font-size: 24px;
+}
+
+/* Style the question counter and score */
+.quiz-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Style the question and options */
+.question {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Style question text */
+#question-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style options */
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style individual options */
+.option {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Style the next button */
+#next-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Style the scoreboard */
+.scoreboard {
+  display: none;
+  width: max-content;
+  margin: 20px auto;
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+/* Style the final score */
+#final-score {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style the restart button */
+#restart-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px auto;
+  cursor: pointer;
+}
