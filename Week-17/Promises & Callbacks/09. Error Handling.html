@@ -1,0 +1,30 @@
+<!-- 09. Write a JavaScript program that uses the Fetch method to retrieve
+data from an API, and then handles errors that may occur. For example, you could use the API at 
+https://jsonplaceholder.typicode.com/posts/123456789 
+to simulate an error, and then display an error message on the webpage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Error Handling</h1>
+    </div>
+
+    <!-- JavaScript Starts Here -->
+    <script>
+      fetch("https://jsonplaceholder.typicode.com/posts/123456789 ").then(
+        (response) => {
+          if (!response.ok) {
+            throw new Error("Unable to fetch API. Please try later!");
+          }
+          return response.json();
+        }
+      );
+    </script>
+  </body>
+</html>
