@@ -1,0 +1,15 @@
+{
+  "name": "first-task",
+  "version": "1.0.0",
+  "description": "This is the first task for NodeJS Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "npm"
+  ],
+  "author": "Chinmay Kaitade",
+  "license": "ISC"
+}
