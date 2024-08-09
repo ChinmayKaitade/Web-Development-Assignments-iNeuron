@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Login</title>
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #3897f0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #357ae8;
+    }
+    
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .links a {
+      color: #999;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Instagram Login</h1>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+      </div>
+      <button id="submit" type="submit" class="btn">Log In</button>
+    </form>
+    <div class="links">
+      <a href="#">Forgot Password?</a>
+      <a href="./Register.html">Sign Up</a>
+    </div>
+  </div>
+</body>
+
+<script>
+    const formSubmit = document.getElementById("submit")
+
+    formSubmit.addEventListener("click",(event) => {
+      event.preventDefault();
+      
+      const userName = document.getElementById("username").value
+      const userPassword = document.getElementById("password").value
+      const userData = {
+        username:userName,
+        password:userPassword
+      }
+
+      loginUser(userData)
+
+    })
+
+
+    const loginUser = async (payload) => {
+      try {
+
+          const resp = await fetch("http://localhost:8081/login",{
+            method:"POST",
+            credentials: 'include',
+          redirect: 'follow',
+            headers:{"content-type":"application/json"},
+            body:JSON.stringify(payload)
+          })
+
+          const data = await resp.json();
+          console.log(data)
+          window.location.href="http://localhost:5500/client/index.html";
+        
+      } catch (error) {
+        console.log(error.message)
+      }
+    }
+
+</script>
+</html>

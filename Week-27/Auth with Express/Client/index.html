@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Page</title>
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 40px;
+    
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+      object-fit: cover;
+    }
+    
+    .username {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    
+    .bio {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .follower-count {
+      text-align: center;
+      font-size: 18px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" alt="Profile Image" class="profile-image">
+    <h2 id="userName" class="username">John Doe</h2>
+    <p id="userBio" class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p id="userEmail" class="follower-count">Email: getting</p>
+    <p  class="follower-count">Followers: 1000</p>
+  </div>
+</body>
+
+<script>
+    const userData = async() =>{
+       try {
+        const resp = await fetch("http://localhost:8081",{
+            method:"GET",
+            credentials:"include"
+        });
+        if(resp.status!==200){window.location.href="http://localhost:5500/client/login.html"}
+        const {data} = await resp.json();
+        const userName = document.getElementById("userName")
+        const userEmail = document.getElementById("userEmail")
+        const userBio = document.getElementById("userBio")
+        userName.innerText=data.username;
+        userEmail.innerText=data.email;
+        userBio.innerText=data.bio
+        
+       } catch (error) {
+            console.log(error.message)
+            window.location.href="http://localhost:5500/client/login.html"
+       }
+    } 
+
+    userData()
+
+</script>
+</html>
