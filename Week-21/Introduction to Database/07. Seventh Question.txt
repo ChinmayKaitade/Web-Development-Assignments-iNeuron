@@ -1,0 +1,51 @@
+07. Explain 3 Schema architecture along with its advantages.
+Ans :- The three-schema architecture, also known as ANSI/SPARC architecture, is a 
+framework for organizing databases into three distinct layers:
+- External Schema (View level):
+▪ This schema represents the part of the database that a particular user or group of 
+users is interested in.
+▪ It defines various views of the database tailored to the specific needs of different 
+users or applications.
+▪ Users interact with the database through this schema, which hides the complexities of 
+the underlying logical and physical structures.
+
+- Conceptual Schema (Logical level):
+▪ This schema presents the overall logical structure of the entire database as seen by 
+the database administrator.
+▪ It abstracts away details of how data is stored and focuses on defining the entities, 
+their attributes, and the relationships between them.
+▪ Changes to this schema should ideally be transparent to the external schema, ensuring 
+data independence.
+
+- Internal Schema (Physical level):
+▪ This schema describes how data is stored physically on the storage devices, such as 
+disks.
+▪ It defines data structures, storage allocation, indexing methods, and other physical 
+implementation details.
+▪ Changes to the internal schema should ideally be transparent to both the conceptual 
+and external schemas, ensuring physical data independence.
+
+
+Advantages of the three-schema architecture include:
+- Data Independence:
+It allows for changes to be made at one schema level without affecting the other levels,
+providing independence between different views of the data, logical structure, and physical storage.
+
+- Enhanced Security and Privacy:
+Different users or applications can have access to different external schemas, providing
+a level of security and privacy by controlling what data each user can see and 
+manipulate.
+
+- Flexibility and Adaptability:
+The architecture enables the modification of one schema without affecting the others, 
+making it easier to adapt the database to evolving requirements and changes in 
+technology.
+
+- Improved Maintenance and Development:
+Developers can work independently on different schema levels, which facilitates easier
+maintenance and development of the database system.
+
+- Data Abstraction:
+It provides a clear separation between the conceptual view of the data and its physical
+storage, allowing users and applications to interact with the data at a higher level of
+abstraction.

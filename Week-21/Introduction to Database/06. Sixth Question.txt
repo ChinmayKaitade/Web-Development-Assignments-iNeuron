@@ -1,0 +1,31 @@
+06. What is the significance of Data Modelling and explain the types of data modelling.
+Ans :- Data modeling is vital in database design for several reasons :
+- Clarity and Consistency: It ensures a clear understanding of data requirements among 
+stakeholders, reducing ambiguity and ensuring consistency in data storage and access.
+
+- Efficiency in Development: It streamlines the development process by providing a 
+visual representation of the database structure, reducing errors, and facilitating 
+collaboration.
+
+- Improved Communication: Data models serve as a common language for discussing data 
+requirements among stakeholders, validating their understanding of the system.
+
+- Scalability and Flexibility: Well-designed data models anticipate future changes, 
+allowing for the system to adapt to evolving business needs and technological 
+advancements.
+
+- Optimized Performance: By identifying bottlenecks and inefficiencies, data modeling 
+helps optimize database performance, improving query execution times.
+
+
+Types of Data Modeling:
+- Conceptual Data Modeling: Focuses on high-level business concepts and relationships.
+
+- Logical Data Modeling: Translates the conceptual model into a detailed representation
+closer to the database implementation.
+
+- Physical Data Modeling: Specifies how the logical data model will be implemented in a
+specific DBMS, guiding database creation and optimization.
+
+Each type serves a distinct purpose, from capturing business requirements to defining 
+the detailed database implementation, ensuring robust and efficient systems.

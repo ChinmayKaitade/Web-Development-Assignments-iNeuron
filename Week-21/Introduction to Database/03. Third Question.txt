@@ -1,0 +1,18 @@
+03. What is DBMS ? What was the need for DBMS ?
+Ans :- A Database management System (DBMS) is system software for creating and managing
+databases. A DBMS makes it possible for end users to create, protect, read, update and 
+delete data in a database.
+
+A DBMS enables businesses to store, manipulate, and retrieve data from a database, fac-
+ilitating information accessibility and maintenence. Some key benefits of a robust DBMS 
+include :
+
+Data Security : A DBMS provides mechanisms to secure data, allowing only authorized
+personnel to access, alter, and delete information.
+
+Data Consistency : It ensures that the data is consistent across all access points, red-
+ucing redundancy and the risk of data conflicts.
+
+Data Sharing : It promotes an organized way of sharing data among multiple users or app-
+lications simultaneoulsy, enhancing business collaboration and efficiency.
+

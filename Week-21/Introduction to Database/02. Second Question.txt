@@ -1,0 +1,27 @@
+02. Write a short note on File base storage system. Explain the major challenges of
+    a File-based storage system.
+Ans :- A Filebased storage system is a traditional approach to storing and managing 
+data, where data is stored in individual files on a computer's file system. Each file 
+contains a collection of records, with each record representing an entity or object in 
+the system. The data in each file is usually organized in a simple, flat structure, 
+with no relationships established between files.
+
+Major Challenges of a File-based Storage System :
+
+1. Data Redundancy : Data Redundancy occurs when the same data is stored in multiple 
+files or locations, resulting in inconsistencies and errors.
+
+2. Data Inconsistency : Data Inconsistency is another majaor challenge in a file-based
+storage system.
+
+3. Limited Scalability : File-based storage systems are often not very scalable. As the
+amount of data in the system grows, it can become increasingly difficult to manage and 
+maintain the system.
+
+4. Security : File-based storage systems are often less secure than database systems. 
+In a file-based storage system, it can be difficult to control who has access to data 
+and what they can do with it.
+
+5. Data Isolation : Data Isolation refers to the fact that in a file-based storage 
+system, data is often stored in separate files, which makes it difficult to makes it 
+difficult to access and share data across different applications or systems.

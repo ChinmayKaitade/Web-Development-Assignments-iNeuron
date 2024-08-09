@@ -1,0 +1,19 @@
+04. Explain 5 Challenges of file-based storage system which was tackled by DBMS ?
+Ans :- Challenges of file-based Storage System :
+1. Data Redundancy : Data Redundancy occurs when the same data is stored in multiple 
+files or locations, resulting in inconsistencies and errors.
+
+2. Data Inconsistency : Data Inconsistency is another majaor challenge in a file-based
+storage system.
+
+3. Limited Scalability : File-based storage systems are often not very scalable. As the
+amount of data in the system grows, it can become increasingly difficult to manage and 
+maintain the system.
+
+4. Security : File-based storage systems are often less secure than database systems. 
+In a file-based storage system, it can be difficult to control who has access to data 
+and what they can do with it.
+
+5. Data Isolation : Data Isolation refers to the fact that in a file-based storage 
+system, data is often stored in separate files, which makes it difficult to makes it 
+difficult to access and share data across different applications or systems.
